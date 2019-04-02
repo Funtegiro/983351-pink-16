@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Олеся Титовская](https://up.htmlacademy.ru/adaptive/16/user/983351).
-* Наставник: [Ольга Ветер] (https://htmlacademy.ru/profile/id73199).
+* Наставник: [Ольга Ветер](https://htmlacademy.ru/profile/id73199).
 
 ---
 
