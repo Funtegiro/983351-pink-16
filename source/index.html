@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
-  </head>
-  <body>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/adaptive">HTML и CSS, уровень 2</a>».</p>
+<head>
+  <meta charset="utf-8">
+  <title>Мобильное приложение "Pink"</title>
+</head>
 
-  </body>
+<body>
+  <header class="page-header">
+    <a class="logo logo--light">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="22" viewbox="0 0 75 22">
+        <image id="logotype-white-mobile.svg" width="75" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAYAAACIXmHDAAACu0lEQVRYhdWZgXXaMBCG7/o6ABs03SCZoGGChgkKExQmSDMB6QTQCcIGZAPoBHEnCBv8fQcncpZkW5bttHzv5b3YPp2sX6fTCROALdLYAXgCMAUwohrkOYBX9XpXZak+hRcAV4FBA9LG9HMbs06xqQLAdWkciUL5vDaIcGsa/AgM3uwsu6ZJiLRv7Efup7xLpJ0V6tj2o3leENGvoNWJT0R0rX+CDEqibMbM68A6D/G9JKJZT/6yEaGIaKvjFPZE9FgSi5lrldelIgNyUbUCIO2eA+M8ZIn/aXqPfyDUmJkPHwLrGphZhJkQkY2m79UtkimM4X3dEh+SiFAbJ5RctBLLsDD/9zGwwlt+K33xdyMi1FoCwwlFuWKpg/PSa5uYY2jucxHrcmJnvylUCBXkztzIGgR9QTcJVzqAQUkVqqtY52ViQ7UHJiaHyfa9GkoszY1JQlGuWADmpoO+dsIjKrwI5iZAdshpYNgR9flkxvFQJxTliKVCLc2th8CoI8y8jyT8VtV3HSqUH7Ffm3KkrbNGDS8kz75pLnGse6yxSjDzBoBMxL3el4R/I+VLYNyCiFCFjsnlrptKb8FBJp3KwjHjuFOZyCVnVR2JMo47O5SZRo41lTmy7TIsdHv//I5V9kKraNLZrxxMAm5TknwoUbrWJT8xTaeaagLsMtx7xaZP0XUJ5CAJH8CYiF40Gd8BWDJz3bvWcdCq3E2A9PEs51wzEUsAB//ca8U6DJV/umIE26mrOYDf3jEphUAohwgD4ItElt4SwfbW9r8qSuuI7JBLW+sl8jMmlENLh41eShRv7e9sFyMWvR2JHvVy5JUwfTEzObJ07Loosegk2KLvQtjz7xfF503l4sRSJmb2e0c3srHxe9xULlIsnf2Zmf0h+vBz5Nx+NOitbsr4YJHVt/ge8oOFtj8VtcDuLwkc6IyOR5cBAAAAAElFTkSuQmCC" />
+      </svg>
+    </a>
+    <nav class="main-nav">
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="site-list__link">Главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="photo.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">Конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main class="page-main">
+    <h1 class="page-main__title visually-hidden">Pink</h1>
+    <section class="applications">
+      <h2 class="visually-hidden">Приложения</h2>
+      <button class="button applications__toggle--button" type="download" aria-label="Download">Скачать приложение</button>
+      <a class="applications__button" href="https://www.apple.com/ru/ios/app-store/">
+        <span class="visually-hidden">App Store</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewbox="0 0 47 56">
+          <image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAAClUlEQVRoge2ZgVHDMAxFpRwDwATABjAB7QaMUCYAJihMAExQNgAmoExQNmiZoGUCcQI5JJHtprSQ3zveXa53buJ8K7YkW9QlIjIQkQf5ptepoDaY6Ll4cMWLyK6IPEdEB3bdQwiIyFHC2oE5qnC1+NTJrTNyDyLQWJQpThGFnzqZnql7EAERmTipHjwvY4t0GTfuQQRE5GqJcMxFSl/icz4dVzilxavL3Ihn2XEtv8OCiMZE9MTM95t6A7uWDCJyQER6Be+gol71YuZF+kmP9dWz/vbthjf7HTPz2D20KvoS9QgtIuSDJVzJ/MT6umjpPkOfq7tRC+k3rrvlaP4yChHTBDdT31XRtXPkRMYw/7zM0n+NGmUQkVuzeCrXRqEcADeE66eZuBHh0dcFXVTnOBE9b4HwhV1UVBo14iU9BQjqlg+ZWX+/po25I3Srv9p0KeNJsPy5uxWLWVO4wjbXMfeP3/RjEVctj7f9qnMfE04m/sS1YnGXUqPi24XdbpgFzxIDXfyja6lQuBYs3nNq0MVn+RffFejis25cI6y4Viz2Uvvjwnb1yCQzgCLkxsAMU9JU/ItrxUI38FcxRYXlyegMY5vvsBmZb8EuSjmrnrgFV4m+aAOj6hQK4p/cbbgM7UxpEKaNTpnplkydkk/LWxDIpp+APJaHTnZqi1nYitMvcxtmnm3Rwp3VTsyMa3cbJnGddjyNTHk45iojNvcnwJ6nPMNx+bzN/fhn6Z7b6hmOs3zAPg9SZVqNelzN7XPi0QLXcfMMx02bgI2w7/7ohsvc4VMSK/N0yXqV8jUGMLdK3k+Lc5sp8bcstNXKmJE+elYebVOwi+6e1hmAbslUXPPlal0tDrda3FbjjdVmw+A11uQhog8XxXEmgRU8SgAAAABJRU5ErkJggg==" />
+        </svg>
+      </a>
+      <a class="applications__button" href="#">
+        <span class="visually-hidden">Android</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="47" viewbox="0 0 43 47">
+          <image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACXklEQVRYhe2ZwVXjMBCG/+RRgKlgsx0sx+hCqABy1yGpAFIBUAFsBeGQO6ECwiU6Lh0QKiAd7L6BETEjWZIB+e1B33s6eCyNftvSSB71EGGxHg4A3GtlfoZrvtelYtloZTZORbfdE4CjWN2oWHY2B/CslbkQ9grACYBjACMAldMY2AJYAbgDsNTKbIUP8vlDKzN1Wn5SLIn4Y5+er88BTBoENkFClwBmJNp+NQAH8iF8JIllwWcADgE8sNA2IiUk7NL608pcOzU8JItlwS9fFOmI1srsO9YG+n6zy2I9vPIIveGSwiO/zfrnrthvEqljdsRjq85KK3OE3QScOA0/ss/jlCbkrbhHc2HltBDsORY/c491wBMNHAlijHhy/fLUI//R0JgSZ31vIgdjrcwy5DdlzB47ljxE+0kRO3AseYj2kyI2ZTx+B1310w0pE6yzJ46Fr5TQJeNrToIv71UsbygmdqORsq3LDWs64VXzhjT1FuvhRAR9Ejy1MW+xHv7tSqBWpoddbJ+L5X1K0UCuzZXH1jW+fchV32NEh7G1CV//VfKu63+giM1FEZuLIjYXRWwuithcFLG56HM6UpKUKMuIr/8ViR1zvmrL5VorM3Oqdgj3T4I3rIn0jYP/PHjbtd939Jv8njtrImXMzkTmLwdb7idIahaRkmmntR84yYZLE/KswWIz4b+1Mo/OXUHbZHLTkLiU5w2i3QVnyyXRT1+nxNlcFLG5KGJz0VZsKJZ+hlb+2oq9cyxvBA8uAveb/HlpJZYzi3TwZrEZx+Dqw/fpILm+bNNCEnvIHQD+Acm0txWSvSOpAAAAAElFTkSuQmCC" />
+        </svg>
+      </a>
+      <a class="applications__button" href="#">
+        <span class="visually-hidden">Microsoft</span>
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="41" viewbox="0 0 44 41">
+          <image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAlklEQVRYhe3UoQ3CUBRG4ftIB8BgMegOwQ4wDzTpNnSESjZAY5gAi4KUpOpJ7klocj55xZ8jXl55HnbvSLYe7mVa7K/79O1VdflzBtMMphlMM5hmMM1gmsE0g2mLC24ioquuecjtZSjt5XHOLr0dt9/N17hJ356exKm6/m4OTd/2l6AZTDOYZjDNYJrBNINpBtMMRkXEB0s9D6XLBH8HAAAAAElFTkSuQmCC" />
+        </svg>
+      </a>
+    </section>
+    <section class="advantages">
+      <h2 class="visually-hidden">Преимущества</h2>
+      <p class="advantages__slogan">
+        Устали от серости мегаполиса? Нам есть, что вам предложить!
+      </p>
+      <ul class="advantages__list">
+        <li class="advantages__item">
+          <img class="advantages__image" src="http://placehold.it/150x100" alt="Поднимает настроение">
+          <h3 class="advantages__title">Поднимает настроение</h3>
+          <p class="advantages__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+        </li>
+        <li class="advantages__item">
+          <img class="advantages__image" src="http://placehold.it/150x100" alt="Меняет мир вокруг">
+          <h3 class="advantages__title">Меняет мир вокруг</h3>
+          <p class="advantages__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+        </li>
+        <li class="advantages__item">
+          <img class="advantages__image" src="http://placehold.it/150x100" alt="Заводит новых друзей">
+          <h3 class="advantages__title">Заводит новых друзей</h3>
+          <p class="advantages__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+        </li>
+      </ul>
+    </section>
+    <section class="reviews">
+      <div class="reviews__wrapper">
+        <h2 class="visually-hidden">Отзывы</h2>
+        <div class="reviews__list">
+          <blockquote class="reviews__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+          <blockquote class="reviews__item">
+            <cite class="reviews__author-name">Николай Петров</cite>
+            <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </blockquote>
+        </div>
+        <p class="reviews__toggles slider__toggles">
+          <button class="slider__toggle" type="button">1</button>
+          <button class="slider__toggle" type="button">2</button>
+          <button class="slider__toggle" type="button">3</button>
+        </p>
+      </div>
+    </section>
+    <div class="tariffs__wrapper">
+      <table class="tariffs">
+        <tr>
+          <th class="tariffs__name">База</th>
+          <th class="tariffs__name">Стандарт</th>
+          <th class="tariffs__name">Анлим</th>
+        </tr>
+        <tr>
+          <th class="tariffs__price">1,99 USD</th>
+          <th class="tariffs__price">3,99 USD</th>
+          <th class="tariffs__price">9,99 USD</th>
+        </tr>
+        <tr>
+          <td class="tariffs__options">Розовый фильтр</td>
+          <td class="tariffs__options">Розовый фильтр</td>
+          <td class="tariffs__options">Розовый фильтр</td>
+        </tr>
+        <tr>
+          <td class="tariffs__options">Смайлики</td>
+          <td class="tariffs__options">Смайлики</td>
+          <td class="tariffs__options">Смайлики</td>
+        </tr>
+        <tr>
+          <td class="tariffs__options">Комментарии</td>
+          <td class="tariffs__options">Комментарии</td>
+          <td class="tariffs__options">Комментарии</td>
+        </tr>
+      </table>
+      <p class="tariffs__toggles slider__toggles">
+        <button class="slider__toggle" type="button">1</button>
+        <button class="slider__toggle" type="button">2</button>
+        <button class="slider__toggle" type="button">3</button>
+      </p>
+    </div>
+  </main>
+  <footer class="page-footer">
+    <section class="contacts">
+      <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+      <p class="contacts_phone">Звоните:
+        <a href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+      </p>
+      <p class="contacts__email">Пишите:
+        <a href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+      </p>
+      <p for="contacts__adress">Приезжайте в гости:
+        <address>ул. Большая Конюшенная, 19/8</address>
+      </p>
+      <iframe class="contacts__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390"
+        allowfullscreen>
+      </iframe>
+    </section>
+  </footer>
+</body>
+
 </html>
