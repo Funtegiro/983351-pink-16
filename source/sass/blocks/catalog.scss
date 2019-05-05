@@ -1,19 +1,27 @@
 .catalog {
-	position: relative;
-	top: -245px;
 	background-color: #ffffff;
 }
 
+.catalog__list {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
 .catalog__item {
-	max-width: 280px;
-	background-color: #f2f2f2;
-	margin-top: 20px;
+	display: flex;
+	flex-direction: column;
 	margin-left: 20px;
+	margin-bottom: 20px;
+	width: 280px;
+	background-color: #f2f2f2;
+}
+
+.catalog__blockquote {
+	flex-grow: 1;
 }
 
 .catalog__title {
-	position: relative;
-	top: -140px;
 	font-size: 24px;
 	line-height: auto;
 	font-weight: 300;
@@ -75,12 +83,12 @@
 	height: 16px;
 	background: #ee4156;
 	border-radius: 50px 50px 0 0;
-	transform: rotate("-45deg");
+	transform: rotate(-45deg);
 	transform-origin: 0 100%;
 }
 
 .catalog__item-button::after {
 	left: 0;
-	transform: rotate("45deg");
+	transform: rotate(45deg);
 	transform-origin: 100% 100%;
 }
