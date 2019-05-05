@@ -63,3 +63,19 @@
 	font-style: normal;
 	text-decoration: none;
 }
+
+.contacts__map {
+	width: 100%;
+}
+
+@media (min-width: $tablet-width) {
+	.contacts__title {
+		font-size: 40px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.contacts__title {
+		font-size: 50px;
+	}
+}

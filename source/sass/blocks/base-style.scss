@@ -1,0 +1,97 @@
+@font-face {
+	font-weight: 300;
+	font-family: "Open Sans";
+	font-style: normal;
+	src: url("../fonts/opensanslight.woff2") format("woff2"), url("../fonts/opensanslight.woff") format("woff");
+}
+
+@font-face {
+	font-weight: 400;
+	font-family: "Open Sans";
+	font-style: normal;
+	src: url("../fonts/opensans.woff2") format("woff2"), url("../fonts/opensans.woff") format("woff");
+}
+
+@font-face {
+	font-weight: 700;
+	font-family: "Open Sans";
+	font-style: normal;
+	src: url("../fonts/opensansbold.woff2") format("woff2"), url("../fonts/opensansbold.woff") format("woff");
+}
+
+body {
+	margin: 0;
+	font-family: "Open Sans", "Arial", sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+	background-color: $bg-white;
+	// width: $mobile-width;
+	// width: $desktop-width;
+	// width: $tablet-width;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+}
+
+body,
+html {
+	box-sizing: border-box;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+}
+
+.button {
+	margin: 0;
+	padding: 0;
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 700;
+	color: #000000;
+	text-transform: uppercase;
+	display: inline-block;
+	vertical-align: baseline;
+	text-align: center;
+	cursor: pointer;
+}
+
+.wrapper {
+	margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+	.wrapper {
+		max-width: $tablet-width;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.wrapper {
+		max-width: $desktop-width;
+	}
+}

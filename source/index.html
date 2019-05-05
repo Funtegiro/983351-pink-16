@@ -4,19 +4,20 @@
 <head>
 	<meta charset="utf-8">
 	<title>Мобильное приложение "Pink"</title>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
 <body>
-	<header class="page-header">
-		<a class="logo logo--light">
-			<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="75" height="22" viewbox="0 0 75 22">
-				<image id="logotype-white-mobile.svg" width="75" height="22" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEsAAAAWCAYAAACIXmHDAAACu0lEQVRYhdWZgXXaMBCG7/o6ABs03SCZoGGChgkKExQmSDMB6QTQCcIGZAPoBHEnCBv8fQcncpZkW5bttHzv5b3YPp2sX6fTCROALdLYAXgCMAUwohrkOYBX9XpXZak+hRcAV4FBA9LG9HMbs06xqQLAdWkciUL5vDaIcGsa/AgM3uwsu6ZJiLRv7Efup7xLpJ0V6tj2o3leENGvoNWJT0R0rX+CDEqibMbM68A6D/G9JKJZT/6yEaGIaKvjFPZE9FgSi5lrldelIgNyUbUCIO2eA+M8ZIn/aXqPfyDUmJkPHwLrGphZhJkQkY2m79UtkimM4X3dEh+SiFAbJ5RctBLLsDD/9zGwwlt+K33xdyMi1FoCwwlFuWKpg/PSa5uYY2jucxHrcmJnvylUCBXkztzIGgR9QTcJVzqAQUkVqqtY52ViQ7UHJiaHyfa9GkoszY1JQlGuWADmpoO+dsIjKrwI5iZAdshpYNgR9flkxvFQJxTliKVCLc2th8CoI8y8jyT8VtV3HSqUH7Ffm3KkrbNGDS8kz75pLnGse6yxSjDzBoBMxL3el4R/I+VLYNyCiFCFjsnlrptKb8FBJp3KwjHjuFOZyCVnVR2JMo47O5SZRo41lTmy7TIsdHv//I5V9kKraNLZrxxMAm5TknwoUbrWJT8xTaeaagLsMtx7xaZP0XUJ5CAJH8CYiF40Gd8BWDJz3bvWcdCq3E2A9PEs51wzEUsAB//ca8U6DJV/umIE26mrOYDf3jEphUAohwgD4ItElt4SwfbW9r8qSuuI7JBLW+sl8jMmlENLh41eShRv7e9sFyMWvR2JHvVy5JUwfTEzObJ07Loosegk2KLvQtjz7xfF503l4sRSJmb2e0c3srHxe9xULlIsnf2Zmf0h+vBz5Nx+NOitbsr4YJHVt/ge8oOFtj8VtcDuLwkc6IyOR5cBAAAAAElFTkSuQmCC" />
-			</svg>
-		</a>
-		<nav class="main-nav">
-			<div class="main-nav__wrapper">
+	<header class="page-header main-nav--closed ">
+		<div class="page-header__wrapper">
+			<a class="page-header__logo logo--light">
+				<img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Мобильное приложение Pink">
+			</a>
+			<nav class="main-nav">
+				<button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span>
+				</button>
 				<ul class="main-nav__list site-list">
 					<li class="site-list__item site-list__item--active">
 						<a class="site-list__link">Главная</a>
@@ -31,40 +32,40 @@
 						<a class="site-list__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
 					</li>
 				</ul>
-			</div>
-		</nav>
+			</nav>
+		</div>
 	</header>
 	<main class="page-main">
-		<h1 class="page-main__title visually-hidden">Pink</h1>
-		<section class="applications">
-			<h2 class="visually-hidden">Приложения</h2>
-			<div class="page-main__bg">
-
-			</div>
-			<div class="applications__button">
-				<button class="button applications__toggle--button" type="download" aria-label="Download">Скачать приложение</button>
-				<a class="applications__button--icon" href="https://www.apple.com/ru/ios/app-store/">
-					<span class="visually-hidden">App Store</span>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="56" viewbox="0 0 47 56">
-						<image id="apple-logo.svg" width="47" height="56" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAA4CAYAAABt9KGPAAAClUlEQVRoge2ZgVHDMAxFpRwDwATABjAB7QaMUCYAJihMAExQNgAmoExQNmiZoGUCcQI5JJHtprSQ3zveXa53buJ8K7YkW9QlIjIQkQf5ptepoDaY6Ll4cMWLyK6IPEdEB3bdQwiIyFHC2oE5qnC1+NTJrTNyDyLQWJQpThGFnzqZnql7EAERmTipHjwvY4t0GTfuQQRE5GqJcMxFSl/icz4dVzilxavL3Ihn2XEtv8OCiMZE9MTM95t6A7uWDCJyQER6Be+gol71YuZF+kmP9dWz/vbthjf7HTPz2D20KvoS9QgtIuSDJVzJ/MT6umjpPkOfq7tRC+k3rrvlaP4yChHTBDdT31XRtXPkRMYw/7zM0n+NGmUQkVuzeCrXRqEcADeE66eZuBHh0dcFXVTnOBE9b4HwhV1UVBo14iU9BQjqlg+ZWX+/po25I3Srv9p0KeNJsPy5uxWLWVO4wjbXMfeP3/RjEVctj7f9qnMfE04m/sS1YnGXUqPi24XdbpgFzxIDXfyja6lQuBYs3nNq0MVn+RffFejis25cI6y4Viz2Uvvjwnb1yCQzgCLkxsAMU9JU/ItrxUI38FcxRYXlyegMY5vvsBmZb8EuSjmrnrgFV4m+aAOj6hQK4p/cbbgM7UxpEKaNTpnplkydkk/LWxDIpp+APJaHTnZqi1nYitMvcxtmnm3Rwp3VTsyMa3cbJnGddjyNTHk45iojNvcnwJ6nPMNx+bzN/fhn6Z7b6hmOs3zAPg9SZVqNelzN7XPi0QLXcfMMx02bgI2w7/7ohsvc4VMSK/N0yXqV8jUGMLdK3k+Lc5sp8bcstNXKmJE+elYebVOwi+6e1hmAbslUXPPlal0tDrda3FbjjdVmw+A11uQhog8XxXEmgRU8SgAAAABJRU5ErkJggg==" />
-					</svg>
-				</a>
-				<a class="applications__button--icon" href="#">
-					<span class="visually-hidden">Android</span>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="43" height="47" viewbox="0 0 43 47">
-						<image id="android-logo.svg" width="43" height="47" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAvCAYAAAB6zDPWAAACXklEQVRYhe2ZwVXjMBCG/+RRgKlgsx0sx+hCqABy1yGpAFIBUAFsBeGQO6ECwiU6Lh0QKiAd7L6BETEjWZIB+e1B33s6eCyNftvSSB71EGGxHg4A3GtlfoZrvtelYtloZTZORbfdE4CjWN2oWHY2B/CslbkQ9grACYBjACMAldMY2AJYAbgDsNTKbIUP8vlDKzN1Wn5SLIn4Y5+er88BTBoENkFClwBmJNp+NQAH8iF8JIllwWcADgE8sNA2IiUk7NL608pcOzU8JItlwS9fFOmI1srsO9YG+n6zy2I9vPIIveGSwiO/zfrnrthvEqljdsRjq85KK3OE3QScOA0/ss/jlCbkrbhHc2HltBDsORY/c491wBMNHAlijHhy/fLUI//R0JgSZ31vIgdjrcwy5DdlzB47ljxE+0kRO3AseYj2kyI2ZTx+B1310w0pE6yzJ46Fr5TQJeNrToIv71UsbygmdqORsq3LDWs64VXzhjT1FuvhRAR9Ejy1MW+xHv7tSqBWpoddbJ+L5X1K0UCuzZXH1jW+fchV32NEh7G1CV//VfKu63+giM1FEZuLIjYXRWwuithcFLG56HM6UpKUKMuIr/8ViR1zvmrL5VorM3Oqdgj3T4I3rIn0jYP/PHjbtd939Jv8njtrImXMzkTmLwdb7idIahaRkmmntR84yYZLE/KswWIz4b+1Mo/OXUHbZHLTkLiU5w2i3QVnyyXRT1+nxNlcFLG5KGJz0VZsKJZ+hlb+2oq9cyxvBA8uAveb/HlpJZYzi3TwZrEZx+Dqw/fpILm+bNNCEnvIHQD+Acm0txWSvSOpAAAAAElFTkSuQmCC" />
-					</svg>
-				</a>
-				<a class="applications__button--icon" href="#">
-					<span class="visually-hidden">Microsoft</span>
-					<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="44" height="41" viewbox="0 0 44 41">
-						<image id="microsoft-logo.svg" width="44" height="41" xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAApCAYAAABOScuyAAAAlklEQVRYhe3UoQ3CUBRG4ftIB8BgMegOwQ4wDzTpNnSESjZAY5gAi4KUpOpJ7klocj55xZ8jXl55HnbvSLYe7mVa7K/79O1VdflzBtMMphlMM5hmMM1gmsE0g2mLC24ioquuecjtZSjt5XHOLr0dt9/N17hJ356exKm6/m4OTd/2l6AZTDOYZjDNYJrBNINpBtMMRkXEB0s9D6XLBH8HAAAAAElFTkSuQmCC" />
-					</svg>
-				</a>
-				<p class="applications__button--title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
-			</div>
-		</section>
-		<section class="advantages">
+		<div class="page-main__bg">
+			<h1 class="page-main__title visually-hidden">Pink</h1>
+			<section class="applications wrapper">
+				<h2 class="visually-hidden">Приложения</h2>
+				<div class="applications__image">
+					<!-- <img src="img/iphone-hand-mobile@1x.png" width="258" height="286" alt="Hand"> -->
+				</div>
+				<div class="applications__button">
+					<p class="applications__title">Взгляните на жизнь иначе!
+					</p>
+					<button class="button applications__toggle--button" type="download" aria-label="Download">Скачать приложение</button>
+					<div class="applications__wrapper">
+						<a class="applications__button--icon" href="https://www.apple.com/ru/ios/app-store/">
+							<span class="visually-hidden">App Store</span>
+							<img src="img/logo-apple.svg" width="47" height="56" alt="App Store">
+						</a>
+						<a class="applications__button--icon" href="#">
+							<span class="visually-hidden">Android</span>
+							<img src="img/logo-android.svg" width="43" height="47" alt="Android">
+						</a>
+						<a class="applications__button--icon" href="#">
+							<span class="visually-hidden">Microsoft</span>
+							<img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
+						</a>
+						<p class="applications__button--title">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+					</div>
+				</div>
+			</section>
+		</div>
+		<section class="advantages wrapper">
 			<h2 class="visually-hidden">Преимущества</h2>
 			<p class="advantages__slogan">
 				Устали от серости мегаполиса?
@@ -90,9 +91,14 @@
 				</li>
 			</ul>
 		</section>
-		<section class="reviews">
-			<div class="reviews__wrapper">
-				<h2 class="visually-hidden">Отзывы</h2>
+		<section class="effect wrapper">
+			<h2 class="effect__title">Эффект на 24 часа!</h2>
+			<p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
+			</p>
+			<a class="effect__more" href="#"> Узнать больше об ислледовании</a>
+		</section>
+		<section class="reviews wrapper">
+			<h2 class="visually-hidden">Отзывы</h2>
 				<div class="reviews__list">
 					<blockquote class="reviews__item">
 						<cite class="reviews__author-name">Николай Петров</cite>
@@ -112,9 +118,8 @@
 					<button class="slider__toggle" type="button">2</button>
 					<button class="slider__toggle" type="button">3</button>
 				</p>
-			</div>
 		</section>
-		<div class="tariffs__wrapper">
+		<div class="tariffs__wrapper wrapper">
 			<table class="tariffs">
 				<tr>
 					<th class="tariffs__name">База</th>
@@ -152,19 +157,52 @@
 	<footer class="page-footer">
 		<section class="contacts">
 			<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-			<p class="contacts_phone">Звоните:
-				<a class="contacts_tel" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
-			</p>
-			<p class="contacts__email">Пишите:
-				<a class="contacts__mailto" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-			</p>
-			<p class="contacts__address">Приезжайте в гости:
-				<address class="contacts__location">ул. Большая Конюшенная, 19/8</address>
-			</p>
+			<div class="wrapper">
+				<p class="contacts_phone">Звоните:
+					<a class="contacts_tel" href="tel:+7 (812) 555-66-66">+7 (812) 555-66-66</a>
+				</p>
+				<p class="contacts__email">Пишите:
+					<a class="contacts__mailto" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+				</p>
+				<p class="contacts__address">Приезжайте в гости:
+					<address class="contacts__location">ул. Большая Конюшенная, 19/8</address>
+				</p>
+			</div>
 			<iframe class="contacts__map" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390">
 			</iframe>
 		</section>
+		<div class="page-footer__social container-hide wrapper">
+			<a class="logo logo--dark" href="index.html">
+				<img src="img/logo-pink-blue-mobile.svg" width="146.3px" height="40.375px" alt="Мобильное приложение Pink">
+			</a>
+			<div class="social">
+				<ul class="social__list">
+					<li class="social__item">
+						<a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" alt="Мы в Твиттере">
+							<img src="img/icon-twitter.svg" width="18" height="14" alt="Мы в Твиттере">
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" alt="Мы в Фейсбуке">
+							<img src="img/icon-facebook.svg" width="9" height="18" alt="Мы в Фейсбуке">
+						</a>
+					</li>
+					<li class="social__item">
+						<a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" alt="Мы на Youtube">
+							<img src="img/icon-youtube.svg" width="15" height="13" alt="Мы на Youtube">
+						</a>
+					</li>
+				</ul>
+			</div>
+			<div class="page-footer__copyright copyright">
+				<span class="copyright__text">Разработано:</span>
+				<a class="button copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
+					<img src="img/logo-htmlacademy.svg" width="27" height="34" alt="HTML Academy">
+				</a>
+			</div>
+		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 
 </html>

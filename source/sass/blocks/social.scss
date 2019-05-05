@@ -1,7 +1,3 @@
-.logo--dark {
-	background-color: #ffffff;
-}
-
 .social {
 	background-color: #ffffff;
 }
@@ -25,4 +21,20 @@
 	border: 3px solid #e9ebec;
 	margin-left: 8px;
 	margin-right: 8px;
+}
+
+@media (max-width: $tablet-width-before) {
+	.page-footer__social.container-hide {
+		display: none;
+	}
+}
+
+@media (min-width: $mobile-width) {
+	.page-footer__social {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		text-align: center;
+		align-items: center;
+	}
 }

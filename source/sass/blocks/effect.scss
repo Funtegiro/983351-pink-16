@@ -1,0 +1,47 @@
+.effect {
+	background-color: $bg-lightgrey;
+}
+
+.effect__title {
+	font-size: 30px;
+	line-height: 36px;
+	font-weight: 700;
+	color: #000000;
+}
+
+.effect__text {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #283645;
+}
+
+.effect__more {
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+	color: #d22856;
+}
+
+@media (max-width: $tablet-width-before) {
+	.effect {
+		display: none;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.effect__title {
+		line-height: 30px;
+		font-weight: 700;
+	}
+
+	.effect__text {
+		font-size: 18px;
+		line-height: 30px;
+	}
+
+	.effect__more {
+		font-size: 18px;
+		line-height: 30px;
+	}
+}
