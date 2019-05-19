@@ -7,22 +7,20 @@
 .applications__image {
 	width: 258px;
 	padding-top: 100px;
-
-	img {
-		display: block;
-		margin: 0;
-		padding: 0;
-	}
+	display: block;
+	margin: 0;
 }
 
-.applications__button {
+.applications__install {
 	display: flex;
+	flex-direction: column;
 	flex-wrap: wrap;
+	text-align: center;
 	width: 100%;
 	background-color: #1d2631;
 }
 
-.applications__toggle--button {
+.applications__install__button {
 	display: flex;
 	border-radius: 30px;
 	border: 3px solid white;
@@ -36,15 +34,24 @@
 	color: #ffffff;
 	justify-content: center;
 	text-align: center;
+
+	&:hover {
+		background-color: #ffffff;
+		color: #d22856;
+	}
+
+	&:active {
+		color: rgba(210, 40, 86, 0.3);
+	}
 }
 
-.applications__button--icon {
+.applications__install__link {
 	display: inline-block;
-	padding-left: 30px;
-	padding-right: 15px;
+	padding-left: 25px;
+	padding-right: 20px;
 }
 
-.applications__button--title {
+.applications__install__text {
 	margin: 0 auto;
 	align-content: center;
 	color: #ffffff;
@@ -59,24 +66,21 @@
 }
 
 @media (max-width: 659px) {
-	.applications__title {
+	.applications__install__title {
 		display: none;
 	}
 }
 
 @media (min-width: $tablet-width) {
-	.applications__toggle--button {
-		margin: 0;
-		padding: 10px 20px;
+	.applications__install__button {
+		padding: 10px 25px;
 		background: none;
 	}
 
-	.applications__button {
+	.applications__install {
 		padding: 20px;
 		position: absolute;
 		width: 300px;
-		display: flex;
-		flex-direction: column;
 		background: none;
 		top: 0;
 
@@ -86,12 +90,12 @@
 		}
 	}
 
-	.applications__button--icon {
+	.applications__install__link {
 		display: inline-block;
 		padding-left: 20px;
 	}
 
-	.applications__title {
+	.applications__install__title {
 		margin: 0;
 		align-content: center;
 		text-align: center;
@@ -102,7 +106,7 @@
 		padding: 35px 50px;
 	}
 
-	.applications__button--title {
+	.applications__install__text {
 		margin: 0;
 		padding: 0;
 		align-content: center;
@@ -117,12 +121,16 @@
 
 	.applications__image {
 		width: 700px;
-		height: 545px;
+	}
+}
 
-		img {
-			display: block;
-			margin: 0;
-			padding: 0;
-		}
+@media (min-width: $desktop-width) {
+	.applications__image {
+		width: 1050px;
+	}
+
+	.applications__install__title {
+		font-size: 50px;
+		line-height: 50px;
 	}
 }

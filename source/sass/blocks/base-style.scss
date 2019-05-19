@@ -84,12 +84,6 @@ img {
 	margin: 0 auto;
 }
 
-@media (min-width: $tablet-width) {
-	.wrapper {
-		max-width: $tablet-width;
-	}
-}
-
 @media (min-width: $desktop-width) {
 	.wrapper {
 		max-width: $desktop-width;

@@ -10,7 +10,7 @@
 	text-align: center;
 }
 
-.contacts_phone {
+.contacts__phone {
 	font-size: 18px;
 	line-height: auto;
 	color: #283645;
@@ -18,7 +18,7 @@
 	text-align: center;
 }
 
-.contacts_tel {
+.contacts__tel {
 	font-size: 24px;
 	line-height: auto;
 	color: #d22856;
@@ -44,6 +44,15 @@
 	text-align: center;
 	text-decoration: none;
 	font-style: normal;
+
+	&:hover {
+		color: #283645;
+		border-bottom: 1px solid #283645;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
 }
 
 .contacts__address {

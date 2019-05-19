@@ -1,10 +1,7 @@
 .reviews {
 	background-color: #ffffff;
-}
-
-.reviews__item {
-	margin: 0;
-	padding: 0;
+	position: relative;
+	width: 320px;
 }
 
 .reviews__author-name {
@@ -14,7 +11,7 @@
 	color: #000000;
 	font-style: normal;
 	padding-top: 45px;
-	padding-left: 80px;
+	padding-left: 40px;
 }
 
 .reviews__text {
@@ -26,4 +23,79 @@
 	font-weight: 400;
 	text-align: center;
 	color: #283645;
+}
+
+// Слайдер //
+
+.reviews__item {
+	display: none;
+}
+
+.slider-controls-item {
+	position: relative;
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	padding: 8px;
+	border-radius: 50%;
+	cursor: pointer;
+
+	&::after {
+		content: "";
+
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		z-index: 1;
+
+		width: 6px;
+		height: 6px;
+
+		background-color: rgba(40, 54, 69, 0.3);
+		border-radius: 50%;
+	}
+
+	&:hover::after {
+		background-color: rgba(40, 54, 69, 0.6);
+	}
+
+	&:active::after {
+		background-color: rgba(40, 54, 69, 0.1);
+	}
+}
+
+.slider__controls {
+	position: absolute;
+	top: 90%;
+	left: 50%;
+	z-index: 100;
+
+	width: 160px;
+	height: 18px;
+
+	text-align: center;
+	font-size: 0;
+	transform: translateX(-50%);
+}
+
+.slider-checked-item--1:checked ~ .reviews__list .reviews__item:nth-child(1),
+.slider-checked-item--2:checked ~ .reviews__list .reviews__item:nth-child(2),
+.slider-checked-item--3:checked ~ .reviews__list .reviews__item:nth-child(3) {
+	display: block;
+}
+
+.slider-checked-item--1:checked ~ .slider__controls .slider-controls-item--1::before,
+.slider-checked-item--2:checked ~ .slider__controls .slider-controls-item--2::before,
+.slider-checked-item--3:checked ~ .slider__controls .slider-controls-item--3::before {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	z-index: 2;
+	width: 12px;
+	height: 12px;
+	margin: -6px;
+	background-color: #ffffff;
+	border: 3px solid #283645;
+	border-radius: 50%;
 }
