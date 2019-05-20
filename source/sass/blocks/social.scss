@@ -1,14 +1,8 @@
 .social {
-	background-color: #ffffff;
-}
-
-.social__list {
-	margin: 0;
-	width: 100%;
 	display: flex;
-	list-style: none;
-	justify-content: space-between;
-	padding: 0 60px;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
 }
 
 .social__link {
@@ -18,9 +12,24 @@
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
-	border: 3px solid #e9ebec;
+	border: 3px solid rgba(40, 54, 69, 0.1);
 	margin-left: 8px;
 	margin-right: 8px;
+	color: rgba(210, 40, 86, 1);
+
+	&:hover {
+		border: 3px solid rgba(40, 54, 69, 1);
+	}
+
+	&:active {
+		border: 3px solid rgba(40, 54, 69, 0.1);
+		color: rgba(210, 40, 86, 0.3);
+	}
+}
+
+.page-footer__logo {
+	color: #283645;
+	cursor: pointer;
 }
 
 @media (max-width: $tablet-width-before) {

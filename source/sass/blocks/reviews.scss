@@ -2,16 +2,20 @@
 	background-color: #ffffff;
 	position: relative;
 	width: 320px;
+	text-align: center;
 }
 
 .reviews__author-name {
+	display: block;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
 	color: #000000;
 	font-style: normal;
-	padding-top: 45px;
-	padding-left: 40px;
+}
+
+.reviews__author-info {
+	display: none;
 }
 
 .reviews__text {
@@ -98,4 +102,10 @@
 	background-color: #ffffff;
 	border: 3px solid #283645;
 	border-radius: 50%;
+}
+
+@media (min-width: $tablet-width) {
+	.reviews__author-info {
+		display: block;
+	}
 }

@@ -1,4 +1,6 @@
 .copyright {
+	display: flex;
+	align-items: center;
 	background-color: #ffffff;
 	text-align: center;
 	padding-top: 35px;
@@ -6,12 +8,29 @@
 }
 
 .copyright__link {
-	vertical-align: middle;
+	display: block;
+	height: 34px;
+}
+
+.copyright__icon {
+	width: 27px;
+	height: 34px;
+	color: rgba(210, 40, 86, 1);
+
+	&:hover {
+		color: rgba(40, 54, 69, 1);
+	}
+
+	&:active {
+		color: rgba(40, 54, 69, 3);
+	}
 }
 
 .copyright__text {
+	margin: 0;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 700;
 	color: #000000;
+	padding-right: 15px;
 }

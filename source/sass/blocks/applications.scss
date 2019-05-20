@@ -4,13 +4,6 @@
 	color: #ffffff;
 }
 
-.applications__image {
-	width: 258px;
-	padding-top: 100px;
-	display: block;
-	margin: 0;
-}
-
 .applications__install {
 	display: flex;
 	flex-direction: column;
@@ -45,12 +38,6 @@
 	}
 }
 
-.applications__install__link {
-	display: inline-block;
-	padding-left: 25px;
-	padding-right: 20px;
-}
-
 .applications__install__text {
 	margin: 0 auto;
 	align-content: center;
@@ -63,6 +50,11 @@
 	text-align: center;
 	padding-top: 25px;
 	padding-bottom: 25px;
+}
+
+.applications__link {
+	margin-left: 10px;
+	margin-right: 10px;
 }
 
 @media (max-width: 659px) {
@@ -80,30 +72,20 @@
 	.applications__install {
 		padding: 20px;
 		position: absolute;
-		width: 300px;
+		width: 330px;
 		background: none;
 		top: 0;
-
-		.applications__wrapper {
-			margin-top: 30px;
-			padding: 0;
-		}
-	}
-
-	.applications__install__link {
-		display: inline-block;
-		padding-left: 20px;
 	}
 
 	.applications__install__title {
-		margin: 0;
+		margin: 65px 25px 0;
 		align-content: center;
 		text-align: center;
 		color: #ffffff;
 		font-size: 40px;
 		line-height: 40px;
 		font-weight: 300;
-		padding: 35px 50px;
+		padding: 35px 0;
 	}
 
 	.applications__install__text {
