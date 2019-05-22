@@ -8,7 +8,7 @@
 	table-layout: fixed;
 }
 
-.tariffs__list {
+.tariffs__column {
 	background-color: #283645;
 	color: #ffffff;
 	border-width: 0 2px;
@@ -55,13 +55,44 @@
 }
 
 @media (max-width: $tablet-width-before) {
-	.tariffs__list {
+	.tariffs__column {
 		width: 80vw;
 	}
 
 	.tariffs__mobile--hidden {
 		display: none;
 	}
+
+	// Слайдер //
+
+	.tariffs {
+		overflow: hidden;
+	}
+
+	.tariffs__table {
+		transition-property: transform;
+		transition-duration: 0.5s;
+		transition-timing-function: ease-in-out;
+	}
+
+	.slider__controls--tariffs-position {
+		bottom: -30px;
+		left: 50%;
+	}
+
+	.slider-checked-item--1:checked ~ .tariffs__table {
+		transform: translateX(calc(10vw - 4px));
+	}
+
+	.slider-checked-item--2:checked ~ .tariffs__table {
+		transform: translateX(calc(-70vw - 4px));
+	}
+
+	.slider-checked-item--3:checked ~ .tariffs__table {
+		transform: translateX(calc(-150vw - 4px));
+	}
+
+	// ----
 }
 
 @media (min-width: $tablet-width) {
@@ -91,6 +122,10 @@
 		white-space: nowrap;
 		clip: rect(0 0 0 0);
 		overflow: hidden;
+	}
+
+	.slider__controls--tariffs-position {
+		display: none;
 	}
 }
 

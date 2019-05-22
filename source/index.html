@@ -131,50 +131,63 @@
 
 			<div class="reviews__slider">
 				<h2 class="visually-hidden">Отзывы</h2>
-				<input class="visually-hidden slider-checked-item--1" type="radio" id="product-1" name="toggle" checked>
-				<input class="visually-hidden slider-checked-item--2" type="radio" id="product-2" name="toggle">
-				<input class="visually-hidden slider-checked-item--3" type="radio" id="product-3" name="toggle">
-				<div class="slider__controls">
+				<input class="visually-hidden slider-checked-item--1" type="radio" id="product-1" name="reviews" checked>
+				<input class="visually-hidden slider-checked-item--2" type="radio" id="product-2" name="reviews">
+				<input class="visually-hidden slider-checked-item--3" type="radio" id="product-3" name="reviews">
+				<div class="reviews__list">
+					<div class="reviews__item">
+						<blockquote class="reviews__info">
+							<cite class="reviews__author-name">Николай Петров</cite>
+							<p class="reviews__author-info">25 лет, водитель трамвая</p>
+							<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</blockquote>
+							<label class="reviews-controls reviews-controls--prev" for="product-3">Предыдущий</label>
+							<label class="reviews-controls reviews-controls--next" for="product-2">Следующий</label>
+					</div>
+					<div class="reviews__item">
+						<blockquote class="reviews__info">
+							<cite class="reviews__author-name">Николай Петров2</cite>
+							<p class="reviews__author-info">25 лет, водитель трамвая</p>
+							<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</blockquote>
+						<label class="reviews-controls reviews-controls--prev" for="product-1">Предыдущий</label>
+						<label class="reviews-controls reviews-controls--next" for="product-3">Следующий</label>
+					</div>
+					<div class="reviews__item">
+						<blockquote class="reviews__info">
+							<cite class="reviews__author-name">Николай Петров3</cite>
+							<p class="reviews__author-info">25 лет, водитель трамвая</p>
+							<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+						</blockquote>
+						<label class="reviews-controls reviews-controls--prev" for="product-2">Предыдущий</label>
+						<label class="reviews-controls reviews-controls--next" for="product-1">Следующий</label>
+					</div>
+				</div>
+				<div class="slider__controls slider__controls--reviews-position">
 					<label class="slider-controls-item slider-controls-item--1" for="product-1">Первый</label>
 					<label class="slider-controls-item slider-controls-item--2" for="product-2">Второй</label>
 					<label class="slider-controls-item slider-controls-item--3" for="product-3">Третий</label>
 				</div>
-				<div class="reviews__list">
-					<blockquote class="reviews__item">
-						<cite class="reviews__author-name">Николай Петров</cite>
-						<p class="reviews__author-info">25 лет, водитель трамвая</p>
-						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-					</blockquote>
-					<blockquote class="reviews__item">
-						<cite class="reviews__author-name">Николай Петров2</cite>
-						<p class="reviews__author-info">25 лет, водитель трамвая</p>
-						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-					</blockquote>
-					<blockquote class="reviews__item">
-						<cite class="reviews__author-name">Николай Петров3</cite>
-						<p class="reviews__author-info">25 лет, водитель трамвая</p>
-						<p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
-					</blockquote>
-				</div>
-
 			</div>
 		</section>
 		<div class="tariffs wrapper">
-			<!-- <input class="visually-hidden slider-checked-item--1" type="radio" id="tariffs-1" name="toggle" checked>
-			<input class="visually-hidden slider-checked-item--2" type="radio" id="tariffs-2" name="toggle">
-			<input class="visually-hidden slider-checked-item--3" type="radio" id="tariffs-3" name="toggle"> -->
+			<input class="visually-hidden slider-checked-item--1" type="radio" id="tariffs-1" name="column">
+			<input class="visually-hidden slider-checked-item--2" type="radio" id="tariffs-2" name="column" checked>
+			<input class="visually-hidden slider-checked-item--3" type="radio" id="tariffs-3" name="column">
 			<table class="tariffs__table">
-				<tr>
-					<th class="tariffs__list tariffs__list--hidden tariffs__mobile--hidden"></th>
-					<th class="tariffs__list">
+				<tr class="tariffs__list">
+					<th class="tariffs__column tariffs__column--hidden tariffs__mobile--hidden">
+					</th>
+
+					<th class="tariffs__column">
 						<p class="tariffs__name">База</p>
 						<p class="tariffs__price">1,99 USD</p>
 					</th>
-					<th class="tariffs__list">
+					<th class="tariffs__column">
 						<p class="tariffs__name">Стандарт</p>
 						<p class="tariffs__price">3,99 USD</p>
 					</th>
-					<th class="tariffs__list">
+					<th class="tariffs__column">
 						<p class="tariffs__name">Анлим</p>
 						<p class="tariffs__price">9,99 USD</p>
 					</th>
@@ -182,45 +195,45 @@
 				<tr>
 					<td class="tariffs__options tariffs__mobile--hidden">Розовый фильтр</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Розовый фильтр</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Розовый фильтр</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Розовый фильтр</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 				</tr>
 				<tr>
 					<td class="tariffs__options tariffs__mobile--hidden">Смайлики</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Смайлики</span>
-						<img src="img/icon-no.svg" width="27" 	height="27" alt="Нет">
+						<img src="img/icon-no.svg" width="27" height="27" alt="Нет">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Смайлики</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Смайлики</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 				</tr>
 				<tr>
 					<td class="tariffs__options tariffs__mobile--hidden">Комментарии</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Комментарии</span>
-						<img src="img/icon-no.svg" width="27" 	height="27" alt="Нет">
+						<img src="img/icon-no.svg" width="27" height="27" alt="Нет">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Комментарии</span>
-						<img src="img/icon-no.svg" width="27" 	height="27" alt="Нет">
+						<img src="img/icon-no.svg" width="27" height="27" alt="Нет">
 					</td>
 					<td class="tariffs__options"><span class="tariffs__options-name">Комментарии</span>
-						<img src="img/icon-yes.svg" width="22" 	height="16" alt="Да">
+						<img src="img/icon-yes.svg" width="22" height="16" alt="Да">
 					</td>
 				</tr>
 			</table>
-			<!-- <div class="slider__controls">
+			<div class="slider__controls slider__controls--tariffs-position">
 				<label class="slider-controls-item slider-controls-item--1" for="tariffs-1">Первый</label>
 				<label class="slider-controls-item slider-controls-item--2" for="tariffs-2">Второй</label>
 				<label class="slider-controls-item slider-controls-item--3" for="tariffs-3">Третий</label>
-			</div> -->
+			</div>
 		</div>
 	</main>
 	<footer class="page-footer">
