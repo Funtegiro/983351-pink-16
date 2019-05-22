@@ -112,6 +112,12 @@
 	}
 }
 
+@media (max-width: $tablet-width-only) {
+	.reviews-controls {
+		display: none;
+	}
+}
+
 @media (min-width: $desktop-width) {
 	.reviews__list {
 		background-image: url("../img/icon-quotes.svg");
