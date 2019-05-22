@@ -52,9 +52,13 @@
 	padding-bottom: 25px;
 }
 
+.applications__wrapper {
+	font-size: 0;
+}
+
 .applications__link {
-	margin-left: 10px;
-	margin-right: 10px;
+	display: inline-block;
+	margin: 0 15px;
 }
 
 @media (max-width: 659px) {

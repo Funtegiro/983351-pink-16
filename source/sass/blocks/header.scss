@@ -107,7 +107,7 @@
 	box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15), 0 1px 0 rgba(0, 0, 0, 1);
 }
 
-.site-list__item:nth-child(4n) {
+.site-list__item:last-child {
 	margin-bottom: 1px;
 }
 

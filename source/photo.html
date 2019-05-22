@@ -5,7 +5,6 @@
 	<meta charset="utf-8">
 	<title>Мобильное приложение "Pink"</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&amp;subset=cyrillic" rel="stylesheet">
 	<link href="css/style.css" rel="stylesheet">
 </head>
 
@@ -57,18 +56,28 @@
 				Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
 			</p>
 			<div class="catalog__list">
-				<div class="catalog__item">
+				<div class="catalog__item catalog__item--panorama">
+					<div class="catalog__sticker sticker">
+						<p class="sticker__panorama">Панорама дня</p>
+					</div>
 					<picture>
 						<source media="(min-width:1200px)" srcset="img/panorama-desktop@1x.jpg 1x, img/panorama-desktop@2x.jpg 2x">
 						<source media="(min-width:660px)" srcset="img/panorama-tablet@1x.jpg 1x, img/panorama-tablet@2x.jpg 2x">
-						<img class="catalog__image" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
+						<img class="catalog__image catalog__image--panorama" src="img/panorama-mobile@1x.jpg" srcset="img/panorama-mobile@2x.jpg 2x" alt="Панорама дня">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Анна</cite>
-						<span class="catalog__item-time">(5 минут назад)</span>
-						<p class="catalog__item-description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment catalog__comment--panorama">
+						<blockquote class="catalog__blockquote catalog__blockquote--panorama">
+							<cite class="catalog__author-name">Анна</cite>
+							<span class="catalog__item-time">(5 минут назад)</span>
+							<p class="catalog__description">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+						</blockquote>
+						<div class="catalog__like catalog__like--panorama">
+							<span class="catalog__like-text catalog__like-text--panorama">Нравится: 215</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -76,12 +85,19 @@
 						<source media="(min-width:660px)" srcset="img/photo-car-tablet@1x.jpg 1x, img/photo-car-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-car-mobile@1x.jpg" srcset="img/photo-car-mobile@2x.jpg 2x" alt="Фото автомобиля">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Левон</cite>
-						<span class="catalog__item-time">(5 часов назад)</span>
-						<p class="catalog__item-description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Левон</cite>
+							<span class="catalog__item-time">(5 часов назад)</span>
+							<p class="catalog__description">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 356</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -89,12 +105,19 @@
 						<source media="(min-width:660px)" srcset="img/photo-drumset-tablet@1x.jpg 1x, img/photo-drumset-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-drumset-mobile@1x.jpg" srcset="img/photo-drumset-mobile@2x.jpg 2x" alt="Барабанная установка">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Антон</cite>
-						<span class="catalog__item-time">(12 часов назад)</span>
-						<p class="catalog__item-description">Соседи будут рады!</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Антон</cite>
+							<span class="catalog__item-time">(12 часов назад)</span>
+							<p class="catalog__description">Соседи будут рады!</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 666</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -102,12 +125,19 @@
 						<source media="(min-width:660px)" srcset="img/photo-window-tablet@1x.jpg 1x, img/photo-window-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-window-mobile@1x.jpg" srcset="img/photo-window-mobile@2x.jpg 2x" alt="Окна">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Борис</cite>
-						<span class="catalog__item-time">(20 часов назад)</span>
-						<p class="catalog__item-description">Здесь могла быть ваша цитата о высоком и вечном.</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Борис</cite>
+							<span class="catalog__item-time">(20 часов назад)</span>
+							<p class="catalog__description">Здесь могла быть ваша цитата о высоком и вечном.</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 215</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -115,12 +145,19 @@
 						<source media="(min-width:660px)" srcset="img/photo-fair-tablet@1x.jpg 1x, img/photo-fair-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-fair-mobile@1x.jpg" srcset="img/photo-fair-mobile@2x.jpg 2x" alt="Кубанская бахча">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Сергей</cite>
-						<span class="catalog__item-time">(25 часов назад)</span>
-						<p class="catalog__item-description">Самая кубанская в мире!</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Сергей</cite>
+							<span class="catalog__item-time">(25 часов назад)</span>
+							<p class="catalog__description">Самая кубанская в мире!</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 4</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -128,12 +165,19 @@
 						<source media="(min-width:660px)" srcset="img/photo-pov-tablet@1x.jpg 1x, img/photo-pov-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-pov-mobile@1x.jpg" srcset="img/photo-pov-mobile@2x.jpg 2x" alt="Горы">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Максим</cite>
-						<span class="catalog__item-time">(40 часов назад)</span>
-						<p class="catalog__item-description">Где снег-то?</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Максим</cite>
+							<span class="catalog__item-time">(40 часов назад)</span>
+							<p class="catalog__description">Где снег-то?</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 150</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 				<div class="catalog__item">
 					<picture>
@@ -141,31 +185,89 @@
 						<source media="(min-width:660px)" srcset="img/photo-wing-tablet@1x.jpg 1x, img/photo-wing-tablet@2x.jpg 2x">
 						<img class="catalog__image" src="img/photo-wing-mobile@1x.jpg" srcset="img/photo-wing-mobile@2x.jpg 2x" alt="Крыло самолета">
 					</picture>
-					<blockquote class="catalog__blockquote">
-						<cite class="catalog__author-name">Надежда</cite>
-						<span class="catalog__item-time">(45 часов назад)</span>
-						<p class="catalog__item-description">Всем GM и взаимные лайки!</p>
-					</blockquote>
-					<button class="catalog__item-button visually-hidden" type="button" aria-label="Нравится"></button>
+					<div class="catalog__comment">
+						<blockquote class="catalog__blockquote">
+							<cite class="catalog__author-name">Надежда</cite>
+							<span class="catalog__item-time">(45 часов назад)</span>
+							<p class="catalog__description">Всем GM и взаимные лайки!</p>
+						</blockquote>
+						<div class="catalog__like">
+							<span class="catalog__like-text">Нравится: 2560</span>
+							<button class="catalog__like-button" type="button" aria-label="Нравится">
+								<img class="catalog__like-image" src="img/icon-heart.svg" alt="Нравится">
+							</button>
+						</div>
+					</div>
 				</div>
 			</div>
 		</section>
 		<form class="upload wrapper">
 			<h1 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h1>
-			<picture>
-				<source media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
-				<source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
-				<img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Снежная дорога">
-			</picture>
-			<input type="range" name="crop">
-			<input type="range" name="fill">
-			<input type="range" name="contrast">
-			<button class="upload__button upload__button--done" type="submit">Запостить</button>
-			<button class="upload__button upload__button--cansel" type="reset">Отмена</button>
+			<div class="upload__form">
+				<div class="upload__preview">
+					<picture>
+						<source media="(min-width:1200px)" srcset="img/photo-road-desktop@1x.jpg 1x, img/photo-road-desktop@2x.jpg 2x">
+						<source media="(min-width:660px)" srcset="img/photo-road-tablet@1x.jpg 1x, img/photo-road-tablet@2x.jpg 2x">
+						<img class="upload__image" src="img/photo-road-mobile@1x.jpg" srcset="img/photo-road-mobile@2x.jpg 2x" alt="Снежная дорога">
+					</picture>
+				</div>
+				<div class="upload__editor">
+					<input class="visually-hidden upload__editor-item--1" type="radio" id="editor-1" name="toggle" checked>
+					<input class="visually-hidden upload__editor-item--2" type="radio" id="editor-2" name="toggle">
+					<input class="visually-hidden upload__editor-item--3" type="radio" id="editor-3" name="toggle">
+					<div class="upload__controls">
+						<label class="upload__controls-item upload__controls-item--1" for="editor-1">
+							<svg class="upload__controls-icon" width="48" height="48">
+								<use xlink:href="../img/icon-upload-srite.svg#icon-editor-crop"></use>
+							</svg>
+						</label>
+						<label class="upload__controls-item upload__controls-item--2" for="editor-2">
+							<svg class="upload__controls-icon" width="48" height="48">
+								<use xlink:href="../img/icon-upload-srite.svg#icon-editor-fill"></use>
+							</svg>
+						</label>
+						<label class="upload__controls-item upload__controls-item--3" for="editor-3">
+							<svg class="upload__controls-icon" width="32" height="32">
+								<use xlink:href="../img/icon-upload-srite.svg#icon-editor-contrast"></use>
+							</svg>
+						</label>
+					</div>
+					<ul class="upload__list">
+						<li class="upload__lever">
+							<label class="upload__lever-label" for="crop">
+								<svg class="upload__lever-icon" width="48" height="48">
+									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-crop"></use>
+								</svg>
+							</label>
+							<input class="upload__lever-input" type="range" name="fill">
+						</li>
+						<li class="upload__lever">
+							<label class="upload__lever-label" for="fill">
+								<svg class="upload__lever-icon" width="48" height="48">
+									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-fill"></use>
+								</svg>
+							</label>
+							<input class="upload__lever-input" type="range" name="fill">
+						</li>
+						<li class="upload__lever">
+							<label class="upload__lever-label" for="contrast">
+								<svg class="upload__lever-icon" width="32" height="32">
+									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-contrast"></use>
+								</svg>
+							</label>
+							<input class="upload__lever-input" type="range" name="contrast">
+						</li>
+					</ul>
+					<div class="upload__operation">
+						<button class="upload__button upload__button--done" type="submit">Запостить</button>
+						<button class="upload__button upload__button--cansel" type="reset">Отмена</button>
+					</div>
+				</div>
+			</div>
 		</form>
 	</main>
 	<footer class="page-footer wrapper">
-		<div class="page-footer__social container-hide wrapper">
+		<div class="page-footer__social wrapper">
 			<a class="page-footer__logo">
 				<svg class="page-footer__image page-footer__image--tablet" width="146" height="40">
 					<use xlink:href="../img/icon-logo-adaptive.svg#footer-logo-tablet"></use>

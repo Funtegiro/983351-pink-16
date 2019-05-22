@@ -32,6 +32,14 @@
 	cursor: pointer;
 }
 
+.page-footer__social {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	text-align: center;
+	align-items: center;
+}
+
 @media (max-width: $tablet-width-before) {
 	.page-footer__social.container-hide {
 		display: none;
@@ -41,6 +49,7 @@
 @media (min-width: $mobile-width) {
 	.page-footer__social {
 		display: flex;
+		flex-direction: row;
 		flex-wrap: wrap;
 		justify-content: space-between;
 		text-align: center;
