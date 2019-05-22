@@ -9,7 +9,7 @@
 	background-color: $bg-darkblue;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 50%;
+	background-position: 50% 10%;
 	background-size: cover;
 	color: #ffffff;
 	padding-top: 77px;
@@ -44,10 +44,16 @@
 }
 
 @media (min-width: $tablet-width) {
+	.bg-wrapper {
+		background-position: 50% 0%;
+		background-size: auto;
+	}
+
 	.page-main__title {
 		font-size: 50px;
 		line-height: 50px;
 		font-weight: 300;
+		padding-bottom: 100px;
 	}
 }
 

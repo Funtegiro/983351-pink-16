@@ -19,11 +19,9 @@ $track-radius: 5px;
 .upload__lever-input {
 	-webkit-appearance: none;
 	width: 100%;
-	margin: 6px 0;
+	margin: 30px;
 	background: transparent;
 	flex-grow: 1;
-	margin-left: 30px;
-	margin-right: 30px;
 
 	&:focus {
 		outline: none;

@@ -1,12 +1,27 @@
+.tariffs {
+	max-width: 940px;
+}
+
 .tariffs__table {
 	width: 100%;
 	border-collapse: collapse;
-	border: 2px solid #e5e5e5;
+	table-layout: fixed;
+}
+
+.tariffs__list {
+	background-color: #283645;
+	color: #ffffff;
+	border-width: 0 2px;
+	border-style: solid;
+	border-color: #e5e5e5;
+
+	&--hidden {
+		visibility: hidden;
+	}
 }
 
 .tariffs__name {
-	background-color: #283645;
-	color: #ffffff;
+	margin: 0;
 	font-size: 18px;
 	line-height: 30px;
 	font-weight: 700;
@@ -15,8 +30,7 @@
 }
 
 .tariffs__price {
-	background-color: #283645;
-	color: #ffffff;
+	margin: 0;
 	font-size: 24px;
 	line-height: 30px;
 	font-weight: 300;
@@ -36,19 +50,47 @@
 	padding-left: 20px;
 }
 
+.tariffs__options-name {
+	text-transform: uppercase;
+}
+
 @media (max-width: $tablet-width-before) {
-	.tariffs__options {
-		text-transform: uppercase;
+	.tariffs__list {
+		width: 80vw;
+	}
+
+	.tariffs__mobile--hidden {
+		display: none;
 	}
 }
 
 @media (min-width: $tablet-width) {
+	.tariffs__options {
+		text-align: center;
+
+		&:first-child {
+			text-align: left;
+		}
+	}
+
 	.tariffs__name {
 		font-size: 16px;
 	}
 
 	.tariffs__price {
 		font-size: 18px;
+	}
+
+	.tariffs__options-name {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		margin: -1px;
+		border: 0;
+		padding: 0;
+		white-space: nowrap;
+		clip: rect(0 0 0 0);
+		overflow: hidden;
 	}
 }
 
