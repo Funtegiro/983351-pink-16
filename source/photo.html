@@ -5,7 +5,17 @@
 	<meta charset="utf-8">
 	<title>Мобильное приложение "Pink"</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link href="css/style.css" rel="stylesheet">
+	<link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -234,28 +244,28 @@
 					</div>
 					<ul class="upload__list">
 						<li class="upload__lever">
-							<label class="upload__lever-label" for="crop">
+							<label class="upload__lever-label" for="crop-image">
 								<svg class="upload__lever-icon" width="48" height="48">
 									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-crop"></use>
 								</svg>
 							</label>
-							<input class="upload__lever-input" type="range" name="fill">
+							<input class="upload__lever-input" type="range" name="fill" id="crop-image">
 						</li>
 						<li class="upload__lever">
-							<label class="upload__lever-label" for="fill">
+							<label class="upload__lever-label" for="fill-image">
 								<svg class="upload__lever-icon" width="48" height="48">
 									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-fill"></use>
 								</svg>
 							</label>
-							<input class="upload__lever-input" type="range" name="fill">
+							<input class="upload__lever-input" type="range" name="fill" id="fill-image">
 						</li>
 						<li class="upload__lever">
-							<label class="upload__lever-label" for="contrast">
+							<label class="upload__lever-label" for="contrast-image">
 								<svg class="upload__lever-icon" width="32" height="32">
 									<use xlink:href="../img/icon-upload-srite.svg#icon-editor-contrast"></use>
 								</svg>
 							</label>
-							<input class="upload__lever-input" type="range" name="contrast">
+							<input class="upload__lever-input" type="range" name="contrast" id="contrast-image">
 						</li>
 					</ul>
 					<div class="upload__operation">

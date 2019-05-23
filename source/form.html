@@ -5,7 +5,18 @@
 	<meta charset="utf-8">
 	<title>Мобильное приложение "Pink"</title>
 	<meta name="viewport" content="width=device-width,initial-scale=1">
-	<link href="css/style.css" rel="stylesheet">
+
+	<link rel="preload" href="fonts/opensans.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensans.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="preload" href="fonts/opensansbold.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensansbold.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="preload" href="fonts/opensanslight.woff2" as="font" type="font/woff2" crossorigin="anonymous">
+	<link rel="preload" href="fonts/opensanslight.woff" as="font" type="font/woff" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
@@ -57,18 +68,18 @@
 			<fieldset class="form__fieldset">
 				<legend class="visually-hidden">ФИО</legend>
 				<ul class="form__list">
-				<li class="form__item-list form__item-list--name">
-					<label for="surname">Фамилия:</label>
-					<input class="form__input" id="surname" type="text" name="name" value="" placeholder="Укажите фамилию*">
-				</li>
-				<li class="form__item-list form__item-list--name">
-					<label for="firstname">Имя:</label>
-					<input class="form__input" id="firstname" type="text" name="name" value="" placeholder="Введите ваше имя*">
-				</li>
-				<li class="form__item-list form__item-list--name">
-					<label for="middlename">Отчество:</label>
-					<input class="form__input" id="middlename" type="text" name="name" value="" placeholder="Ну и отчество тоже">
-				</li>
+					<li class="form__item-list form__item-list--name">
+						<label for="surname">Фамилия:</label>
+						<input class="form__input" id="surname" type="text" name="name" value="" placeholder="Укажите фамилию*">
+					</li>
+					<li class="form__item-list form__item-list--name">
+						<label for="firstname">Имя:</label>
+						<input class="form__input" id="firstname" type="text" name="name" value="" placeholder="Введите ваше имя*">
+					</li>
+					<li class="form__item-list form__item-list--name">
+						<label for="middlename">Отчество:</label>
+						<input class="form__input" id="middlename" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+					</li>
 				</ul>
 			</fieldset>
 			<fieldset class="form__fieldset">
@@ -136,7 +147,7 @@
 			<fieldset class="form__fieldset">
 				<legend class="form__legend">Опишите свои эмоции</legend>
 				<label for="emotions-text"></label>
-				<textarea  class="form__emotions__text" name="text" rows="3" id="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				<textarea class="form__emotions__text" name="text" rows="3" id="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 			</fieldset>
 			<button class="form__button button" type="submit">Отправить форму
 			</button>
