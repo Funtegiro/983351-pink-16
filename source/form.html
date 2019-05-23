@@ -64,25 +64,27 @@
 			<h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
 		</div>
 		<form class="form wrapper" action="http://echo.htmlacademy.ru" method="post">
-			<p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! Пожалуйста, заполните форму ниже:</p>
-			<fieldset class="form__fieldset">
+			<p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
+				<span class="form__title-second">Пожалуйста, заполните форму ниже:</span>
+				</p>
+			<fieldset class="form__fieldset form__fieldset--name">
 				<legend class="visually-hidden">ФИО</legend>
 				<ul class="form__list">
 					<li class="form__item-list">
 						<label class="form__item-name" for="surname">Фамилия:</label>
-						<input class="form__input" id="surname" type="text" name="name" value="" placeholder="Укажите фамилию*">
+						<input class="form__input form__input--text" id="surname" type="text" name="name" value="" placeholder="Укажите фамилию*">
 					</li>
 					<li class="form__item-list">
-						<label for="firstname">Имя:</label>
-						<input class="form__input" id="firstname" type="text" name="name" value="" placeholder="Введите ваше имя*">
+						<label class="form__item-name" for="firstname">Имя:</label>
+						<input class="form__input form__input--text" id="firstname" type="text" name="name" value="" placeholder="Введите ваше имя*">
 					</li>
 					<li class="form__item-list">
-						<label class="form__item-label" for="middlename">Отчество:</label>
-						<input class="form__input" id="middlename" type="text" name="name" value="" placeholder="Ну и отчество тоже">
+						<label class="form__item-name" for="middlename">Отчество:</label>
+						<input class="form__input form__input--text" id="middlename" type="text" name="name" value="" placeholder="Ну и отчество тоже">
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__fieldset">
+			<fieldset class="form__fieldset form__fieldset--app">
 				<legend class="form__legend">С каким приложением путешествовали?</legend>
 				<ul class="form__list">
 					<li class="form__item-list">
@@ -99,20 +101,20 @@
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__fieldset">
+			<fieldset class="form__fieldset form__fieldset--contacts">
 				<legend class="form__legend">Контактная информация</legend>
 				<ul class="form__list">
 					<li class="form__item-list">
-						<input class="form__input" type="tel" name="phone" value="" id="tel-info" placeholder="Номер, пожалуйста">
+						<input class="form__input form__input--text" type="tel" name="phone" value="" id="tel-info" placeholder="Номер, пожалуйста">
 						<label class="form__item-name" for="tel-info">Номер телефона</label>
 					</li>
 					<li class="form__item-list">
-						<input class="form__input" type="email" name="email" value="" id="email-info" placeholder="Введите почту *">
+						<input class="form__input form__input--text" type="email" name="email" value="" id="email-info" placeholder="Введите почту *">
 						<label class="form__item-name" for="email-info">Адрес почты</label>
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__fieldset">
+			<fieldset class="form__fieldset form__fieldset--progress">
 				<legend class="form__legend">Ваши безбашенные достижения в путешествии</legend>
 				<ul class="form__list">
 					<li class="form__item-list">
@@ -120,40 +122,42 @@
 						<label class="form__item-label" for="filter-shark-selfie">Сделал селфи с акулой</label>
 					</li>
 					<li class="form__item-list">
+						<input class="form__input form__input--checkbox" type="checkbox" name="beach" id="filter-beach" checked>
+						<label class="form__item-label" for="filter-beach">Обгорел на пляже</label>
+					</li>
+					<li class="form__item-list">
 						<input class="form__input form__input--checkbox" type="checkbox" name="saw-chuck" id="filter-saw-chuck">
 						<label class="form__item-label" for="filter-saw-chuck">Видел Чака Норриса</label>
+					</li>
+					<li class="form__item-list">
+						<input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="filter-souvenirs">
+						<label class="form__item-label" for="filter-souvenirs">Накупил сувениров</label>
 					</li>
 					<li class="form__item-list">
 						<input class="form__input form__input--checkbox" type="checkbox" name="tower" id="filter-tower" checked>
 						<label class="form__item-label" for="filter-tower">Удержал башню</label>
 					</li>
-
-					<li class="form__item-list">
-						<input class="form__input form__input--checkbox" type="checkbox" name="beach" id="filter-beach" checked>
-						<label class="form__item-label" for="filter-beach">Обгорел на пляже</label>
-					</li>
-
-					<li class="form__item-list">
-						<input class="form__input form__input--checkbox" type="checkbox" name="souvenirs" id="filter-souvenirs">
-						<label class="form__item-label" for="filter-souvenirs">Накупил сувениров</label>
-					</li>
-
 					<li class="form__item-list">
 						<input class="form__input form__input--checkbox" type="checkbox" name="hotel" id="filter-hotel">
 						<label class="form__item-label" for="filter-hotel">Разгромил отель</label>
 					</li>
 				</ul>
 			</fieldset>
-			<fieldset class="form__fieldset">
+			<fieldset class="form__fieldset form__fieldset--emotions">
 				<legend class="form__legend">Опишите свои эмоции</legend>
 				<label class="form__item-label" for="emotions-text"></label>
-				<textarea class="form__emotions__text" name="text" rows="3" id="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+				<textarea class="form__emotions__text" name="text" rows="5" id="emotions-text" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
 			</fieldset>
-			<button class="form__button button" type="submit">Отправить форму
-			</button>
-			<small>
-				<sup>*</sup> — обязательные для заполнения поля
-			</small>
+			<div class="form__footer">
+				<button class="form__button button" type="submit">Отправить форму
+				</button>
+				<p class="form__footnote form__footnote--short">
+					<span class="form__asterisk">*</span> — обязательные поля
+				</p>
+				<p class="form__footnote form__footnote--long">
+					<span class="form__asterisk">*</span> — обязательные для заполнения поля
+				</p>
+			</div>
 			<div class="visually-hidden form__modal" id="form-send">
 				<h2 class="form__modal__title"> Ваша заявка отправлена</h2>
 				<p class="form__modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
