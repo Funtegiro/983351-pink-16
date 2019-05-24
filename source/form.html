@@ -20,6 +20,9 @@
 </head>
 
 <body>
+	<div style="display:none">
+		<include src="build/img/sprite.svg"></include>
+	</div>
 	<header class="page-header page-header--nojs">
 		<!-- page-header--nojs отображение меню без JS,
 		При работающем JS:
@@ -29,13 +32,13 @@
 		<div class="page-header__wrapper">
 			<a class="page-header__logo" href="index.html">
 				<svg class="page-header__image page-header__image--mobile" width="75" height="22">
-					<use xlink:href="../img/icon-logo-adaptive.svg#logo-mobile"></use>
+					<use xlink:href="#logo-mobile"></use>
 				</svg>
 				<svg class="page-header__image page-header__image--tablet" width="146" height="40">
-					<use xlink:href="../img/icon-logo-adaptive.svg#logo-tablet"></use>
+					<use xlink:href="#logo-tablet"></use>
 				</svg>
 				<svg class="page-header__image page-header__image--desktop" width="146" height="40">
-					<use xlink:href="../img/icon-logo-adaptive.svg#logo-desktop"></use>
+					<use xlink:href="#logo-desktop"></use>
 				</svg>
 			</a>
 			<nav class="main-nav">
@@ -176,26 +179,26 @@
 		<div class="page-footer__social wrapper">
 			<a class="page-footer__logo">
 				<svg class="page-footer__image page-footer__image--tablet" width="146" height="40">
-					<use xlink:href="../img/icon-logo-adaptive.svg#footer-logo-tablet"></use>
+					<use xlink:href="#footer-logo-tablet"></use>
 				</svg>
 				<svg class="page-footer__image page-footer__image--desktop" width="146" height="40">
-					<use xlink:href="../img/icon-logo-adaptive.svg#footer-logo-desktop"></use>
+					<use xlink:href="#footer-logo-desktop"></use>
 				</svg>
 			</a>
 			<div class="social">
 				<a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru" aria-label="Мы в Твиттере">
 					<svg class="social__icon" width="17" height="15">
-						<use xlink:href="../img/icon-social-sprite.svg#icon-twitter"></use>
+						<use xlink:href="#icon-twitter"></use>
 					</svg>
 				</a>
 				<a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" aria-label="Мы в Фейсбуке">
 					<svg class="social__icon" width="9" height="19">
-						<use xlink:href="../img/icon-social-sprite.svg#icon-facebook"></use>
+						<use xlink:href="#icon-facebook"></use>
 					</svg>
 				</a>
 				<a class="social__link social__link--youtube" href="https://www.instagram.com/htmlacademy" aria-label="Мы на Youtube">
 					<svg class="social__icon" width="15" height="14">
-						<use xlink:href="../img/icon-social-sprite.svg#icon-youtube"></use>
+						<use xlink:href="#icon-youtube"></use>
 					</svg>
 				</a>
 			</div>
@@ -203,7 +206,7 @@
 				<span class="copyright__text">Разработано</span>
 				<a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="HTML Academy">
 					<svg class="copyright__icon" width="27" height="34">
-						<use xlink:href="../img/logo-htmlacademy.svg#logo-htmlacademy"></use>
+						<use xlink:href="#logo-htmlacademy"></use>
 					</svg>
 				</a>
 			</div>
