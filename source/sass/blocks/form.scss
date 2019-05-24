@@ -168,6 +168,7 @@
 				height: 30px;
 				left: 0;
 				top: 0;
+				background-color: #ffffff;
 			}
 
 			&:hover::before {
@@ -213,6 +214,7 @@
 				height: 30px;
 				left: 0;
 				top: 0;
+				background-color: #ffffff;
 			}
 
 			&:hover::before {
@@ -322,13 +324,23 @@
 	}
 
 	.form__fieldset--name {
+		flex-basis: 50%;
 		flex-grow: 1;
 		max-width: 430px;
 	}
 
 	.form__fieldset--app {
+		flex-basis: 50%;
 		flex-grow: 1;
 		max-width: 430px;
+	}
+
+	.form__list {
+		&--contacts {
+			flex-direction: row;
+			display: flex;
+			flex-wrap: wrap;
+		}
 	}
 
 	.form__footnote--short {
@@ -337,5 +349,22 @@
 
 	.form__footnote--long {
 		display: block;
+	}
+
+	.form__item-list {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.form__list {
+		&--progress {
+			flex-direction: row;
+			display: flex;
+			flex-wrap: wrap;
+
+			.form__item-list {
+				width: 30%;
+			}
+		}
 	}
 }
