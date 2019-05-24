@@ -1,17 +1,21 @@
 .effect {
+	background-color: #ffffff;
+}
+
+.effect__wrapper {
+	max-width: 940px;
+	margin: 0 auto;
 	position: relative;
 	padding-left: 50%;
 	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: left;
-	max-width: 940px;
-	background-color: #ffffff;
 }
 
 .effect__picture {
 	position: absolute;
 	top: 0;
-	left: 5%;
+	left: 3%;
 	padding: 20px;
 }
 
@@ -60,10 +64,13 @@
 
 @media (min-width: $desktop-width) {
 	.effect {
+		background-color: $bg-lightgrey;
+	}
+
+	.effect__wrapper {
 		padding-top: 100px;
 		padding-bottom: 100px;
 		padding-left: 30%;
-		background-color: $bg-lightgrey;
 	}
 
 	.effect__icon {

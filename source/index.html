@@ -97,7 +97,7 @@
 			</section>
 		</div>
 		<section class="advantages">
-			<div class="wrapper">
+
 				<h2 class="visually-hidden">Преимущества</h2>
 				<p class="advantages__slogan">
 					Устали от серости мегаполиса?
@@ -105,7 +105,10 @@
 				<p class="advantages__slogan">
 					Нам есть, что вам предложить!
 				</p>
+				<div class="advantages__wrapper">
+					<img class="advantages__bg" src="img/bg-triangle-white.svg" width="1200" height="94" alt="#">
 				<ul class="advantages__list">
+
 					<li class="advantages__item">
 						<picture>
 							<source type="image/webp" media="(min-width:1200px)" srcset="img/iphone-screen-1-desktop@1x.webp 1x, img/iphone-screen-1-desktop@2x.webp 2x">
@@ -145,7 +148,8 @@
 				</ul>
 			</div>
 		</section>
-		<section class="effect wrapper">
+		<section class="effect">
+			<div class="effect__wrapper">
 			<div class="effect__picture">
 				<span class="effect__hours">24</span>
 				<svg class="effect__icon" width="298" height="345">
@@ -156,6 +160,7 @@
 			<p class="effect__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!
 			</p>
 			<a class="effect__more" href="#"> Узнать больше об исследовании</a>
+		</div>
 		</section>
 		<section class="reviews wrapper reviews--slider">
 
@@ -200,7 +205,10 @@
 				</div>
 			</div>
 		</section>
-		<div class="tariffs wrapper">
+		<div class="tariffs">
+			<img class="tariffs__bg" src="img/bg-triangle-white.svg" width="1200" height="94" alt="#">
+			<div class="wrapper">
+
 			<input class="visually-hidden slider-checked-item--1" type="radio" id="tariffs-1" name="column">
 			<input class="visually-hidden slider-checked-item--2" type="radio" id="tariffs-2" name="column" checked>
 			<input class="visually-hidden slider-checked-item--3" type="radio" id="tariffs-3" name="column">
@@ -214,7 +222,17 @@
 						<p class="tariffs__price">1,99 USD</p>
 					</th>
 					<th class="tariffs__column">
-						<p class="tariffs__name">Стандарт</p>
+						<div class="tariffs__promo">
+							<span class="tariffs__hit">Хит</span>
+							<svg class="tariffs__icon-hit tariffs__icon-hit--mobile" width="61" height="61">
+								<use xlink:href="#bg-hit"></use>
+							</svg>
+							<svg class="tariffs__icon-hit tariffs__icon-hit--tablet" width="74" height="73">
+								<use xlink:href="#bg-hit-tablet"></use>
+							</svg>
+						</div>
+						<p class="tariffs__name">Стандарт
+						</p>
 						<p class="tariffs__price">3,99 USD</p>
 					</th>
 					<th class="tariffs__column">
@@ -264,25 +282,25 @@
 				<label class="slider-controls-item slider-controls-item--2" for="tariffs-2">Второй</label>
 				<label class="slider-controls-item slider-controls-item--3" for="tariffs-3">Третий</label>
 			</div>
+			</div>
 		</div>
 	</main>
-	<footer class="page-footer">
-		<section class="contacts">
-			<h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
-			<div class="wrapper">
-				<p class="contacts__phone">Звоните:
+	<section class="contacts wrapper">
+			<h2 class="contacts__title">Остались вопросы?<br>Свяжитесь с нами!</h2>
+			<div class="contacts__phone">Звоните:
 					<a class="contacts__tel" href="tel:+7(812)555-66-66">+7 (812) 555-66-66</a>
-				</p>
-				<p class="contacts__email">Пишите:
+				</div>
+				<div class="contacts__email">Пишите:
 					<a class="contacts__mailto" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
-				</p>
+				</div>
 				<div class="contacts__address"> Приезжайте в гости:
 					<address class="contacts__location">ул. Большая Конюшенная, 19/8</address>
 				</div>
-			</div>
+			<img class="contacts__bg" src="img/bg-triangle-white-footer.svg" width="595" height="62" alt="#">
+			</section>
 			<iframe class="contacts__map" allowfullscreen src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253002762!2d30.320858715618378!3d59.93871916905475!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1552763791390">
 			</iframe>
-		</section>
+		<footer class="page-footer">
 		<div class="page-footer__social container-hide wrapper">
 			<a class="page-footer__logo">
 				<svg class="page-footer__image page-footer__image--tablet" width="146" height="40">

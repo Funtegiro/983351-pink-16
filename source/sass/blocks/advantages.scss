@@ -1,6 +1,4 @@
 .advantages {
-	max-width: 940px;
-	margin: 0 auto;
 	padding-top: 45px;
 }
 
@@ -15,13 +13,25 @@
 }
 
 .advantages__list {
+	max-width: 940px;
+	margin: 0 auto;
 	position: relative;
-	margin: 0;
 	padding: 0;
-	background-color: $bg-lightgrey;
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+}
+
+.advantages__wrapper {
+	position: relative;
+	background-color: $bg-lightgrey;
+}
+
+.advantages__bg {
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
 }
 
 .advantages__item {
