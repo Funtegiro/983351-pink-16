@@ -63,6 +63,65 @@
 	justify-content: center;
 }
 
+// Слайдер
+// Оформление элемента управления
+$thumb-bg: #ffffff;
+$thumb-bg-active: #cf2c57;
+$thumb-radius: 14px;
+$thumb-height: 14px;
+$thumb-width: 14px;
+$thumb-border-width: 2px;
+$thumb-border-color: #cf2c57;
+
+// Оформление трека
+$track-color: #283747;
+$track-color-focus: #283747;
+$track-width: 100%;
+$track-height: 2px;
+$track-border-width: 0;
+$track-radius: 0;
+
+.upload__lever-range {
+	width: $track-width;
+	margin: 30px;
+	background: transparent;
+	flex-grow: 1;
+}
+
+.upload__lever-range__track {
+	width: $track-width;
+	height: $track-height;
+	cursor: pointer;
+	box-shadow: none;
+	background: $track-color;
+	border-radius: $track-radius;
+	border: $track-border-width solid $track-color;
+
+	&:focus-within {
+		background: $track-color-focus;
+	}
+}
+
+.upload__lever-range__thumb {
+	box-shadow: none;
+	border: $thumb-border-width solid $thumb-border-color;
+	height: $thumb-height;
+	width: $thumb-width;
+	border-radius: $thumb-radius;
+	background: $thumb-bg;
+	cursor: pointer;
+	margin-top: -$thumb-height/2 - $track-height/2;
+	margin-left: -$thumb-width/2;
+	box-sizing: border-box;
+	position: relative;
+
+	&:active {
+		background: $thumb-bg-active;
+	}
+}
+
+// Конец слайдера
+
 .upload__operation {
 	display: flex;
 	flex-direction: column;

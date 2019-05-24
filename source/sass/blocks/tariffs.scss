@@ -6,6 +6,7 @@
 	width: 100%;
 	border-collapse: collapse;
 	table-layout: fixed;
+	empty-cells: hide;
 }
 
 .tariffs__column {
@@ -17,6 +18,7 @@
 
 	&--hidden {
 		visibility: hidden;
+		border-left-color: transparent;
 	}
 }
 
