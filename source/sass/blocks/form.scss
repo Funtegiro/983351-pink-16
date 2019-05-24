@@ -341,6 +341,16 @@
 			display: flex;
 			flex-wrap: wrap;
 		}
+
+		&--progress {
+			flex-direction: row;
+			display: flex;
+			flex-wrap: wrap;
+
+			.form__item-list {
+				width: 30%;
+			}
+		}
 	}
 
 	.form__footnote--short {
@@ -354,17 +364,5 @@
 	.form__item-list {
 		display: flex;
 		flex-direction: row;
-	}
-
-	.form__list {
-		&--progress {
-			flex-direction: row;
-			display: flex;
-			flex-wrap: wrap;
-
-			.form__item-list {
-				width: 30%;
-			}
-		}
 	}
 }
