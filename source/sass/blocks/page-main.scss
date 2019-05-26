@@ -13,6 +13,7 @@
 	background-size: 100% auto;
 	color: #ffffff;
 	padding-top: 177px;
+	overflow: hidden;
 
 	&--photo {
 		padding-top: 95px;
@@ -61,9 +62,14 @@
 }
 
 @media (min-width: $tablet-width) {
+	.main-nav__toggle {
+		top: 20px;
+	}
+
 	.bg-wrapper {
 		background-position: 50% 0%;
 		background-size: auto;
+		padding-top: 43px;
 	}
 
 	.page-main__title {
@@ -76,6 +82,7 @@
 
 @media (min-width: $desktop-width) {
 	.bg-wrapper {
+		padding-top: 162px;
 		background-image: url("../img/bg-back-desktop@1x.jpg");
 
 		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

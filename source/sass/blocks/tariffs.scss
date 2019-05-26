@@ -1,8 +1,8 @@
 .tariffs {
 	position: relative;
 	background-color: #f2f2f2;
-	padding-top: 130px;
-	padding-bottom: 100px;
+	padding-top: 90px;
+	padding-bottom: 60px;
 }
 
 .tariffs__table {
@@ -21,6 +21,7 @@
 	border-width: 0 2px;
 	border-style: solid;
 	border-color: #e5e5e5;
+	background-clip: padding-box;
 
 	&--hidden {
 		visibility: hidden;
@@ -34,7 +35,7 @@
 	line-height: 30px;
 	font-weight: 700;
 	text-transform: uppercase;
-	padding-top: 15px;
+	padding-top: 16px;
 }
 
 .tariffs__price {
@@ -43,19 +44,19 @@
 	line-height: 30px;
 	font-weight: 300;
 	text-transform: uppercase;
-	padding-bottom: 15px;
+	padding-bottom: 20px;
 }
 
 .tariffs__options {
+	position: relative;
 	border: 2px solid #e5e5e5;
 	background-color: #ffffff;
 	color: #283645;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 400;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-left: 20px;
+	padding: 13px 20px 15px;
+	background-clip: padding-box;
 }
 
 .tariffs__options-name {
@@ -70,8 +71,8 @@
 
 .tariffs__hit {
 	position: absolute;
-	top: 10px;
-	left: 20%;
+	top: 14px;
+	left: 11%;
 	color: #ffffff;
 	font-size: 14px;
 	line-height: 21px;
@@ -92,8 +93,14 @@
 }
 
 @media (max-width: $tablet-width-before) {
+	.tariffs__options-icon {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+	}
+
 	.tariffs__column {
-		width: 80vw;
+		width: 86vw;
 	}
 
 	.tariffs__mobile--hidden {
@@ -113,20 +120,19 @@
 	}
 
 	.slider__controls--tariffs-position {
-		bottom: -30px;
-		left: 50%;
+		margin-top: 40px;
 	}
 
 	.slider-checked-item--1:checked ~ .tariffs__table {
-		transform: translateX(calc(10vw - 4px));
+		transform: translateX(calc(8vw - 4px));
 	}
 
 	.slider-checked-item--2:checked ~ .tariffs__table {
-		transform: translateX(calc(-70vw - 4px));
+		transform: translateX(calc(-78vw - 4px));
 	}
 
 	.slider-checked-item--3:checked ~ .tariffs__table {
-		transform: translateX(calc(-150vw - 4px));
+		transform: translateX(calc(-164vw - 4px));
 	}
 
 	// ----

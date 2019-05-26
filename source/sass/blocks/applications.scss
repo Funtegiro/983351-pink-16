@@ -72,27 +72,30 @@
 
 @media (min-width: $tablet-width) {
 	.applications__install__button {
-		padding: 10px 25px;
+		padding: 16px 25px;
 		background: none;
+		margin-top: 18px;
+		margin-bottom: 42px;
+		width: 100%;
 	}
 
 	.applications__install {
-		padding: 20px;
-		position: absolute;
-		width: 330px;
+		position: relative;
+		width: 340px;
 		background: none;
-		top: 0;
+		z-index: 1;
+		padding: 85px 18px;
 	}
 
 	.applications__install__title {
-		margin: 65px 25px 0;
+		margin: 63px 25px 0;
 		align-content: center;
 		text-align: center;
 		color: #ffffff;
 		font-size: 40px;
-		line-height: 40px;
+		line-height: 48px;
 		font-weight: 300;
-		padding: 35px 0;
+		padding: 12px 28px;
 	}
 
 	.applications__install__text {
@@ -104,22 +107,55 @@
 		line-height: 24px;
 		font-weight: 300;
 		text-align: center;
-		padding-top: 25px;
+		padding-top: 26px;
 		padding-bottom: 25px;
+	}
+
+	.applications__link {
+		margin: 0 18px;
 	}
 
 	.applications__image {
 		width: 700px;
+		max-width: none;
+		flex: none;
+		position: absolute;
+		bottom: 0;
+		left: -20px;
 	}
 }
 
 @media (min-width: $desktop-width) {
+	.applications__install {
+		margin: 0;
+		width: 300px;
+		padding-top: 55px;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 	.applications__image {
 		width: 1050px;
+		left: 16px;
 	}
 
 	.applications__install__title {
+		margin: 0;
+		padding: 0;
 		font-size: 50px;
-		line-height: 50px;
+		line-height: 60px;
+	}
+
+	.applications__install__text {
+		margin: 45px 0 37px;
+		padding: 0;
+	}
+
+	.applications__install__button {
+		margin-top: 52px;
+		margin-bottom: 64px;
+		padding: 16px 22px;
+		font-size: 21px;
+		width: 100%;
 	}
 }

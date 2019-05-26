@@ -5,12 +5,13 @@ body {
 	line-height: 24px;
 	color: #000000;
 	background-color: $bg-white;
-	// width: $mobile-width;
-	// width: $desktop-width;
-	// width: $tablet-width;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
+	margin-left: 0;
+	width: $mobile-width;
+	// width: $desktop-width;
+	// width: $tablet-width;
 }
 
 *,

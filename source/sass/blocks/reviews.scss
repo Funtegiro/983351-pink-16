@@ -3,6 +3,7 @@
 	background-color: #ffffff;
 	position: relative;
 	text-align: center;
+	padding-bottom: 37px;
 }
 
 .reviews__slider {
@@ -50,7 +51,7 @@
 	display: none;
 }
 
-.slider-controls-item {
+.slider__controls-item {
 	position: relative;
 	display: inline-block;
 	width: 12px;
@@ -90,6 +91,8 @@
 	height: 20px;
 	text-align: center;
 	font-size: 0;
+	margin-top: 1px;
+	margin-right: 2px;
 }
 
 .slider-checked-item--1:checked ~ .reviews__list .reviews__item:nth-child(1),
@@ -98,9 +101,9 @@
 	display: block;
 }
 
-.slider-checked-item--1:checked ~ .slider__controls .slider-controls-item--1::before,
-.slider-checked-item--2:checked ~ .slider__controls .slider-controls-item--2::before,
-.slider-checked-item--3:checked ~ .slider__controls .slider-controls-item--3::before {
+.slider-checked-item--1:checked ~ .slider__controls .slider__controls-item--1::before,
+.slider-checked-item--2:checked ~ .slider__controls .slider__controls-item--2::before,
+.slider-checked-item--3:checked ~ .slider__controls .slider__controls-item--3::before {
 	content: "";
 	position: absolute;
 	left: 50%;
@@ -125,7 +128,7 @@
 }
 
 @media (max-width: $tablet-width-only) {
-	.reviews-controls {
+	.reviews__controls {
 		display: none;
 	}
 }
@@ -143,7 +146,7 @@
 		display: none;
 	}
 
-	.reviews-controls {
+	.reviews__controls {
 		position: absolute;
 		background-size: 22px 41px;
 		width: 22px;
