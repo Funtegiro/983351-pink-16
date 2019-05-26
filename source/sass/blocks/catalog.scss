@@ -13,6 +13,7 @@
 	display: flex;
 	flex-direction: column;
 	margin-bottom: 20px;
+	margin-top: 23px;
 	width: 280px;
 }
 
@@ -26,11 +27,13 @@
 }
 
 .catalog__invite {
+	margin: 0;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 400;
 	color: #283645;
 	text-align: center;
+	padding: 47px 34px;
 }
 
 .catalog__item--panorama {
@@ -54,12 +57,13 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: #f2f2f2;
-	padding: 20px;
+	padding: 5px 19px 0 17px;
 	flex-grow: 1;
 }
 
 .catalog__blockquote {
 	margin: 0;
+	padding-left: 20px;
 }
 
 .catalog__author-name {
@@ -87,6 +91,7 @@
 
 .catalog__like {
 	display: flex;
+	padding-bottom: 20px;
 	margin-top: auto;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -106,15 +111,14 @@
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
-	outline: none;
 }
 
 .catalog__sticker {
-	width: 140px;
+	width: 139px;
 	height: 36px;
 	position: absolute;
 	display: block;
-	right: 10%;
+	right: 7%;
 	top: 0;
 	background-color: #d22856;
 }

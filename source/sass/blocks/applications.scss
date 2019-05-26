@@ -28,7 +28,7 @@
 	font-weight: 700;
 	text-transform: none;
 	padding: 15px 35px;
-	margin: 20px auto;
+	margin: 28px auto;
 	background-color: #1d2631;
 	color: #ffffff;
 	justify-content: center;
@@ -48,14 +48,11 @@
 	margin: 0 auto;
 	align-content: center;
 	color: #ffffff;
-	padding-left: 37px;
-	padding-right: 37px;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 300;
 	text-align: center;
-	padding-top: 25px;
-	padding-bottom: 25px;
+	padding: 8px 36px 30px;
 }
 
 .applications__wrapper {
@@ -64,7 +61,7 @@
 
 .applications__link {
 	display: inline-block;
-	margin: 0 15px;
+	margin: 4px 18px;
 }
 
 @media (max-width: 659px) {

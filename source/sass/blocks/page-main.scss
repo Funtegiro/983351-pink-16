@@ -9,21 +9,37 @@
 	background-color: $bg-darkblue;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 10%;
-	background-size: cover;
+	background-position: 50% 0;
+	background-size: 100% auto;
 	color: #ffffff;
-	padding-top: 77px;
+	padding-top: 177px;
+
+	&--photo {
+		padding-top: 95px;
+	}
 }
 
 .page-main__title {
 	max-width: 940px;
 	margin: 0 auto;
 	font-size: 24px;
-	line-height: 24px;
+	line-height: 30px;
 	font-weight: 300;
 	color: #ffffff;
-	padding: 50px 10px;
+	padding: 2px 10px 80px;
 	text-align: center;
+}
+
+.main-nav__toggle {
+	position: absolute;
+	top: 10px;
+	right: 0;
+	z-index: 2;
+	width: 90px;
+	height: 50px;
+	background-color: transparent;
+	cursor: pointer;
+	border: none;
 }
 
 @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

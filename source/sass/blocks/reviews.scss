@@ -5,6 +5,15 @@
 	text-align: center;
 }
 
+.reviews__slider {
+	margin: 0;
+}
+
+.reviews__list {
+	margin: 0;
+	padding: 42px 20px 0 20px;
+}
+
 .reviews__author-name {
 	display: block;
 	font-size: 18px;
@@ -20,8 +29,8 @@
 
 .reviews__text {
 	margin: 0;
-	padding-top: 25px;
-	padding-bottom: 40px;
+	padding-top: 13px;
+	padding-bottom: 30px;
 	font-size: 14px;
 	line-height: 30px;
 	font-weight: 400;
@@ -32,6 +41,7 @@
 .reviews__info {
 	display: flex;
 	flex-direction: column;
+	margin: 0;
 }
 
 // Слайдер //
@@ -45,6 +55,8 @@
 	display: inline-block;
 	width: 12px;
 	height: 12px;
+	margin-left: 5px;
+	margin-right: 5px;
 	padding: 8px;
 	border-radius: 50%;
 	cursor: pointer;

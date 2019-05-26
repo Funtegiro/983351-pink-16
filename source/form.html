@@ -69,10 +69,10 @@
 		<form class="form wrapper" action="http://echo.htmlacademy.ru" method="post">
 			<p class="form__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!
 				<span class="form__title-second">Пожалуйста, заполните форму ниже:</span>
-				</p>
+			</p>
 			<fieldset class="form__fieldset form__fieldset--name">
 				<legend class="visually-hidden">ФИО</legend>
-				<ul class="form__list">
+				<ul class="form__list form__list--name">
 					<li class="form__item-list">
 						<label class="form__item-name" for="surname">Фамилия:</label>
 						<input class="form__input form__input--text" id="surname" type="text" name="name" value="" placeholder="Укажите фамилию*">
@@ -108,11 +108,11 @@
 				<legend class="form__legend">Контактная информация</legend>
 				<ul class="form__list form__list--contacts">
 					<li class="form__item-list">
-						<input class="form__input form__input--text" type="tel" name="phone" value="" id="tel-info" placeholder="Номер, пожалуйста">
-						<label class="form__item-name" for="tel-info">Номер телефона</label>
+						<input class="form__input form__input--text form__input--phone" type="tel" name="phone" value="" id="tel-info" placeholder="Номер, пожалуйста">
+					<label class="form__item-name" for="tel-info">Номер телефона</label>
 					</li>
 					<li class="form__item-list">
-						<input class="form__input form__input--text" type="email" name="email" value="" id="email-info" placeholder="Введите почту *">
+						<input class="form__input form__input--text form__input--email" type="email" name="email" value="" id="email-info" placeholder="Введите почту *">
 						<label class="form__item-name" for="email-info">Адрес почты</label>
 					</li>
 				</ul>
@@ -161,17 +161,18 @@
 					<span class="form__asterisk">*</span> — обязательные для заполнения поля
 				</p>
 			</div>
-			<div class="visually-hidden form__modal" id="form-send">
-				<h2 class="form__modal__title"> Ваша заявка отправлена</h2>
-				<p class="form__modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
-				<button class="form__modal__button button" type="button">Закрыть окно </button>
-			</div>
 
-			<div class="visually-hidden form__modal" id="form-error">
-				<h2 class="form__modal__title">Что-то пошло не так!</h2>
-				<p class="form__modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
-				<button class="form__modal__button button" type="button">Ок </button>
-			</div>
+			<section class="form__modal modal form__modal--send" id="form-send">
+				<h2 class="modal__title"> Ваша заявка отправлена</h2>
+				<p class="modal__text">Спасибо за ваше участие, ваша заявка уже поступила к нам. В ближайшее время мы рассмотрим ее и оповестим вас.</p>
+				<button class="modal__button button modal__button--send" type="button">Закрыть окно </button>
+			</section>
+
+			<section class="form__modal modal form__modal--error" id="form-error">
+				<h2 class="modal__title">Что-то пошло не так!</h2>
+				<p class="modal__text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+				<button class="modal__button button modal__button--error" type="button">Ок </button>
+			</section>
 
 		</form>
 	</main>
