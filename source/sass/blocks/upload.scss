@@ -9,6 +9,8 @@
 	font-weight: 400;
 	color: #283645;
 	text-align: center;
+	margin: 0;
+	padding: 23px 20px 42px;
 }
 
 .upload__form {
@@ -107,15 +109,15 @@
 	flex-direction: column;
 	text-align: center;
 	align-items: center;
-	margin-top: 40px;
-	margin-bottom: 40px;
+	margin-top: 26px;
+	margin-bottom: 23px;
 }
 
 .upload__button {
 	display: block;
 	width: 280px;
-	margin-top: 20px;
-	padding: 20px;
+	margin-top: 11px;
+	padding: 15px;
 	font-size: 18px;
 	line-height: 18px;
 	font-weight: 700;
@@ -173,15 +175,39 @@
 	.upload__lever-label {
 		display: none;
 	}
+
+	.upload__lever-range {
+		margin: 30px 20px;
+	}
 }
 
 @media (min-width: $tablet-width) {
 	.upload__title {
 		font-size: 18px;
+		line-height: 30px;
+		padding: 44px;
+	}
+
+	.upload__form {
+		margin-top: 25px;
+		padding-top: 25px;
+		padding-bottom: 34px;
+	}
+
+	.upload__preview {
+		margin-top: 12px;
+	}
+
+	.upload__lever-range {
+		margin: 31px 18px 31px 20px;
 	}
 
 	.upload__controls {
 		display: none;
+	}
+
+	.upload__lever-label {
+		width: 55px;
 	}
 
 	.upload__lever-icon {
@@ -192,11 +218,14 @@
 	.upload__operation {
 		margin-top: 0;
 		margin-bottom: 0;
+    align-self: stretch;
+		margin-left: 7px;
+		margin-right: 13px;
 	}
 
 	.upload__button {
-		width: 260px;
-		margin-top: 20px;
+		width: 100%;
+		margin-top: 25px;
 	}
 }
 
@@ -206,7 +235,9 @@
 	cursor: pointer;
 	color: #283645;
 	opacity: 0.3;
-	margin: 0 10px;
+	margin: 0 15px;
+	width: 50px;
+	text-align: center;
 
 	&:hover {
 		opacity: 0.5;
@@ -226,6 +257,29 @@
 }
 
 @media (min-width: $desktop-width) {
+	.upload__title {
+		margin: 0;
+		padding: 6px 20px 66px;
+	}
+
+	.upload__form {
+		margin: 0;
+		padding: 25px 60px 37px;
+	}
+
+	.upload__editor {
+		padding: 20px 0px 20px 70px;
+	}
+
+	.upload__lever-label {
+		width: 100px;
+		text-align: left;
+	}
+
+	.upload__lever-range {
+    margin: 31px 30px 31px 20px;
+	}
+
 	.upload__lever-icon {
 		width: 44px;
 	}
@@ -233,7 +287,8 @@
 	.upload__operation {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-evenly;
+		justify-content: space-between;
+		margin: 0;
 	}
 
 	.upload__button {

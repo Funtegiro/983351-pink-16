@@ -12,8 +12,7 @@
 	position: relative;
 	display: flex;
 	flex-direction: column;
-	margin-bottom: 20px;
-	margin-top: 23px;
+	margin-bottom: 19px;
 	width: 280px;
 }
 
@@ -33,7 +32,7 @@
 	font-weight: 400;
 	color: #283645;
 	text-align: center;
-	padding: 47px 34px;
+	padding: 47px 34px 48px;
 }
 
 .catalog__item--panorama {
@@ -57,13 +56,18 @@
 	width: 100%;
 	margin: 0 auto;
 	background-color: #f2f2f2;
-	padding: 5px 19px 0 17px;
+	padding: 18px 19px 20px 17px;
 	flex-grow: 1;
+	flex-shrink: 0;
+
+	&--panorama {
+		width: calc(100% - 40px);
+	}
 }
 
 .catalog__blockquote {
 	margin: 0;
-	padding-left: 20px;
+	padding: 0;
 }
 
 .catalog__author-name {
@@ -87,11 +91,13 @@
 	line-height: 24px;
 	font-weight: 400;
 	color: #283645;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog__like {
 	display: flex;
-	padding-bottom: 20px;
+	padding-top: 10px;
 	margin-top: auto;
 	flex-wrap: nowrap;
 	justify-content: space-between;
@@ -104,13 +110,15 @@
 	text-align: left;
 	text-transform: uppercase;
 	text-decoration: none;
-	margin-left: 10px;
+	margin-left: 20px;
 }
 
 .catalog__like-button {
 	border: none;
 	background-color: transparent;
 	cursor: pointer;
+	margin: 0;
+	padding: 0;
 }
 
 .catalog__sticker {
@@ -145,43 +153,97 @@
 		margin-left: 10px;
 		margin-right: 10px;
 		min-width: 300px;
+		margin-bottom: 20px;
 
 		&--panorama {
 			margin-right: 0;
 			margin-left: 0;
+			margin-bottom: 50px;
 		}
+	}
+
+	.catalog__image--panorama {
+		min-height: 509px;
+		object-fit: cover;
 	}
 
 	.catalog__comment {
 		max-width: 620px;
+		padding: 24px 27px 23px;
 	}
 
 	.catalog__invite {
 		font-size: 18px;
-		padding: 100px 0;
+		padding: 92px 50px 76px;
 	}
 
 	.catalog__sticker {
-		top: 10%;
+		top: 57px;
+		right: 20px;
+	}
+
+	.catalog__blockquote {
+		min-height: 72px;
+
+		&--panorama {
+			min-height: auto;
+		}
+	}
+
+	.catalog__like {
+		padding-top: 12px;
+	}
+
+	.catalog__like-text {
+		margin-left: 0;
+	}
+
+	.catalog__like-button {
+		margin-right: 5px;
 	}
 
 	.catalog__like--panorama {
 		position: absolute;
-		right: 10%;
-		top: 10%;
+		right: 24px;
+		top: 13px;
 	}
 
 	.catalog__like-text--panorama {
-		margin-right: 10px;
+		margin-right: 16px;
 	}
 }
 
 @media (min-width: $desktop-width) {
+
+	.catalog__invite {
+		margin: 0 auto;
+    padding: 92px 290px 88px;
+	}
+
+	.catalog__sticker {
+		top: 54px;
+		right: 130px;
+	}
+
+	.catalog__item {
+		margin-bottom: 53px;
+	}
+
 	.catalog__item--panorama {
 		margin-right: 0;
+		margin-bottom: 50px;
+	}
+
+	.catalog__image--panorama {
+		min-height: 506px;
+		object-fit: cover;
 	}
 
 	.catalog__comment {
 		max-width: 940px;
+	}
+
+	.catalog__like-text--panorama {
+		margin-right: 20px;
 	}
 }
