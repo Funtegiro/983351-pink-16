@@ -82,7 +82,15 @@
 @media (min-width: $tablet-width) {
 	.advantages__slogan {
 		font-size: 40px;
-		padding: 24px 36px 50px;
+
+		&--first {
+			padding: 21px 36px 0;
+		}
+
+		&--second {
+			padding: 12px 40px 50px;
+			line-height: 46px;
+		}
 	}
 
 	.advantages__item {
@@ -92,9 +100,17 @@
 	.advantages__wrapper {
 		padding-top: 0;
 	}
+
+	.advantages__description {
+		padding: 10px 10px 36px 0;
+	}
 }
 
 @media (min-width: $desktop-width) {
+	.advantages__slogan {
+		font-size: 50px;
+	}
+
 	.advantages__list {
 		flex-direction: row;
 	}
@@ -106,14 +122,14 @@
 
 @media (min-width: $tablet-width) and (max-width: $tablet-width-only) {
 	.advantages__list {
-		padding-top: 73px;
+		padding-top: 74px;
 		padding-left: 50%;
 		text-align: left;
 	}
 
 	.advantages__item:nth-child(3) .advantages__image {
 		position: absolute;
-		bottom: 7px;
+		bottom: -10px;
 		left: 3%;
 	}
 }

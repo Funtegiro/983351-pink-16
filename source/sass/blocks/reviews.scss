@@ -12,7 +12,7 @@
 
 .reviews__list {
 	margin: 0;
-	padding: 42px 20px 0 20px;
+	padding: 42px 20px 0;
 }
 
 .reviews__author-name {
@@ -118,12 +118,32 @@
 }
 
 @media (min-width: $tablet-width) {
+	.reviews {
+		padding-bottom: 14px;
+	}
+
 	.reviews__text {
+		font-size: 18px;
+		line-height: 30px;
 		order: -1;
+		padding-top: 27px;
 	}
 
 	.reviews__author-info {
+		margin: 0;
 		display: block;
+		line-height: 30px;
+		padding-bottom: 10px;
+		padding-top: 2px;
+	}
+
+	.reviews__author-name {
+		font-size: 20px;
+		padding-top: 4px;
+	}
+
+	.reviews__list {
+		padding: 15px 20px 0;
 	}
 }
 

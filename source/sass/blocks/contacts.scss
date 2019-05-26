@@ -113,10 +113,12 @@
 @media (min-width: $tablet-width) {
 	.contacts {
 		flex-direction: row;
+		padding-top: 91px;
 	}
 
 	.contacts__title {
 		font-size: 40px;
+		line-height: 50px;
 	}
 
 	.contacts__map {

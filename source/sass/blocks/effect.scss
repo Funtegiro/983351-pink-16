@@ -8,15 +8,15 @@
 	position: relative;
 	padding-left: 50%;
 	padding-top: 64px;
-	padding-bottom: 50px;
+	padding-bottom: 83px;
 	text-align: left;
 }
 
 .effect__picture {
 	position: absolute;
-	top: 0;
-	left: 3%;
-	padding: 20px;
+	top: 45px;
+	left: 0;
+	padding: 21px 20px;
 }
 
 .effect__icon {
@@ -35,18 +35,24 @@
 }
 
 .effect__title {
+	margin: 0;
 	font-size: 30px;
 	line-height: 36px;
 	font-weight: 700;
 	color: #000000;
+	padding-top: 38px;
+	padding-right: 125px;
 }
 
 .effect__text {
+	margin: 0;
 	font-size: 14px;
 	line-height: 24px;
 	font-weight: 400;
 	color: #283645;
-	padding-top: 20px;
+	padding-top: 10px;
+	padding-right: 25px;
+	padding-bottom: 11px;
 }
 
 .effect__more {
@@ -55,6 +61,10 @@
 	font-weight: 400;
 	color: #d22856;
 	text-decoration: underline;
+}
+
+.slider__controls.slider__controls--reviews-position {
+	margin-top: 22px;
 }
 
 @media (max-width: $tablet-width-before) {

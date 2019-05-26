@@ -5,14 +5,14 @@
 }
 
 .bg-wrapper {
+	background-size: 780px auto;
+	background-position: center 21px;
+	padding-top: 180px;
 	width: 100%;
 	background-color: $bg-darkblue;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
-	background-position: 50% 0;
-	background-size: 100% auto;
 	color: #ffffff;
-	padding-top: 177px;
 	overflow: hidden;
 
 	&--photo {
@@ -67,7 +67,7 @@
 	}
 
 	.bg-wrapper {
-		background-position: 50% 0%;
+		background-position: 50% 0;
 		background-size: auto;
 		padding-top: 43px;
 	}
