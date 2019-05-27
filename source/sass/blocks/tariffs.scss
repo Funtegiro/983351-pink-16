@@ -2,6 +2,7 @@
 	position: relative;
 	background-color: #f2f2f2;
 	padding-top: 90px;
+	padding-bottom: 41px;
 }
 
 .tariffs__table {
@@ -139,8 +140,9 @@
 
 @media (min-width: $tablet-width) {
 	.tariffs {
-		padding-top: 95px;
-		padding-bottom: 67px;
+		margin: 0 auto;
+		padding-top: 90px;
+		padding-bottom: 72px;
 	}
 
 	.tariffs__wrapper {
@@ -198,8 +200,23 @@
 }
 
 @media (min-width: $desktop-width) {
+	.tariffs {
+		padding-top: 162px;
+		padding-bottom: 95px;
+	}
+
+	.tariffs__wrapper {
+		margin: 0 auto;
+		max-width: 940px;
+	}
+
+	.tariffs__column {
+		padding: 17px 0;
+	}
+
 	.tariffs__name {
 		font-size: 18px;
+		padding-top: 0;
 	}
 
 	.tariffs__price {
@@ -208,5 +225,6 @@
 
 	.tariffs__options {
 		font-size: 18px;
+		padding: 13px 20px;
 	}
 }

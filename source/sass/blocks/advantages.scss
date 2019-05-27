@@ -123,20 +123,33 @@
 
 	.advantages__list {
 		flex-direction: row;
+		justify-content: space-between;
 	}
 
 	.advantages__item {
+		margin: 0;
+		padding: 0;
 		text-align: center;
+		flex-basis: 300px;
+	}
+
+	.advantages__image {
+		display: block;
+		margin: 0 auto;
 	}
 
 	.advantages__title {
 		font-size: 30px;
 		line-height: 30px;
+		margin: 0;
+		padding: 55px 30px 20px;
 	}
 
 	.advantages__description {
 		font-size: 18px;
 		line-height: 30px;
+		margin: 0;
+		padding: 4px 30px;
 	}
 }
 
