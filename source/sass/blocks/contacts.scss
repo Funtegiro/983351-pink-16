@@ -113,7 +113,8 @@
 @media (min-width: $tablet-width) {
 	.contacts {
 		flex-direction: row;
-		padding-top: 21px;
+		padding-top: 19px;
+		padding-bottom: 30px;
 	}
 
 	.contacts__title {
@@ -122,7 +123,30 @@
 	}
 
 	.contacts__map {
-		height: 440px;
+		height: 365px;
+	}
+
+	.contacts__bg {
+		top: calc(100% - 4px);
+	}
+
+	.contacts__phone {
+		padding-top: 42px;
+		padding-right: 78px;
+	}
+
+	.contacts__email {
+		padding-top: 42px;
+	}
+
+	.contacts__address {
+		padding-top: 50px;
+	}
+
+	.contacts__location {
+		padding-top: 4px;
+		margin-right: 200px;
+		margin-left: 200px;
 	}
 }
 

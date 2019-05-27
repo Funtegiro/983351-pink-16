@@ -107,8 +107,18 @@
 }
 
 @media (min-width: $desktop-width) {
+	.advantages {
+		padding-top: 60px;
+	}
+
 	.advantages__slogan {
 		font-size: 50px;
+
+		&--second {
+			padding: 17px 83px 75px;
+			line-height: 60px;
+			margin: 0 167px;
+		}
 	}
 
 	.advantages__list {
@@ -117,6 +127,16 @@
 
 	.advantages__item {
 		text-align: center;
+	}
+
+	.advantages__title {
+		font-size: 30px;
+		line-height: 30px;
+	}
+
+	.advantages__description {
+		font-size: 18px;
+		line-height: 30px;
 	}
 }
 
