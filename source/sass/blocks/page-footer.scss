@@ -3,13 +3,18 @@
 	margin: 0 auto;
 }
 
+@media (min-width: $tablet-width) {
+
+
+}
+
 @media (min-width: $desktop-width) {
 	.page-footer {
 		max-width: 980px;
 	}
 
 	.page-footer__social {
-		padding: 74px 21px 0;
+		padding: 22px 21px 0;
 	}
 
 	.page-footer__logo {

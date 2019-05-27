@@ -256,7 +256,17 @@
 	opacity: 1;
 }
 
+@media (min-width: $tablet-width) {
+	.upload {
+		margin-bottom: 10px;
+	}
+}
+
 @media (min-width: $desktop-width) {
+	.upload {
+		margin-bottom: 53px;
+	}
+
 	.upload__title {
 		margin: 0;
 		padding: 6px 20px 66px;

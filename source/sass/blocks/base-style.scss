@@ -8,10 +8,15 @@ body {
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
-	// margin-left: 0;
-	// width: $mobile-width;
-	// width: $desktop-width;
-	// width: $tablet-width;
+	//
+	margin-left: 0;
+	width: $mobile-width;
+	@media (min-width: $tablet-width) {
+		width: $tablet-width;
+	}
+	@media (min-width: $desktop-width) {
+		width: $desktop-width;
+	}
 }
 
 *,
