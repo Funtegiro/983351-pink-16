@@ -7,17 +7,14 @@
 .bg-wrapper {
 	background-size: 780px auto;
 	background-position: center 21px;
-	padding-top: 180px;
+	padding-top: 70px;
 	width: 100%;
 	background-color: $bg-darkblue;
 	background-image: url("../img/bg-back-mobile@1x.jpg");
 	background-repeat: no-repeat;
 	color: #ffffff;
 	overflow: hidden;
-
-	&--photo {
-		padding-top: 95px;
-	}
+	min-height: 240px;
 }
 
 .page-main__title {
@@ -27,7 +24,7 @@
 	line-height: 30px;
 	font-weight: 300;
 	color: #ffffff;
-	padding: 6px 10px 80px;
+	padding: 30px 10px 20px;
 	text-align: center;
 }
 
@@ -70,26 +67,22 @@
 		background-position: 50% 0;
 		background-size: auto;
 		padding-top: 43px;
+		min-height: 439px;
 	}
 
 	.page-main__title {
 		font-size: 50px;
 		line-height: 60px;
 		font-weight: 300;
-		padding-bottom: 140px;
-		padding-top: 136px;
+		padding: 136px 20px 20px;
 	}
 }
 
 @media (min-width: $desktop-width) {
 	.bg-wrapper {
 		padding-top: 162px;
+		min-height: 394px;
 		background-image: url("../img/bg-back-desktop@1x.jpg");
-
-		&--photo {
-			padding-top: 37px;
-			min-height: 394px;
-		}
 
 		@media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
 			background-image: url("../img/bg-back-desktop@2x.jpg");
@@ -102,6 +95,6 @@
 		line-height: 60px;
 		font-weight: 300;
 		padding-bottom: 20px;
-		padding-top: 136px;
+		padding-top: 11px;
 	}
 }

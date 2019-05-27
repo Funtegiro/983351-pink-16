@@ -64,6 +64,11 @@
 }
 
 @media (min-width: $tablet-width) {
+	.social__link {
+		margin-left: 5px;
+		margin-right: 8px;
+	}
+
 	.page-footer__social {
 		display: flex;
 		flex-direction: row;
@@ -71,5 +76,19 @@
 		justify-content: space-between;
 		text-align: center;
 		align-items: center;
+		padding: 10px 20px;
+	}
+
+	.page-footer__logo {
+		width: 30%;
+		text-align: left;
+		padding-bottom: 10px;
+	}
+}
+
+@media (min-width: $desktop-width) {
+	.social__link {
+		margin-left: 10px;
+		margin-right: 3px;
 	}
 }

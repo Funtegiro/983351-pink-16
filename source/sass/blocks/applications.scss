@@ -4,6 +4,7 @@
 	margin: 0 auto;
 	position: relative;
 	color: #ffffff;
+	padding-top: 110px;
 }
 
 .applications__install {
@@ -71,6 +72,10 @@
 }
 
 @media (min-width: $tablet-width) {
+	.applications {
+		padding-top: 0;
+	}
+
 	.applications__install__button {
 		padding: 16px 25px;
 		background: none;

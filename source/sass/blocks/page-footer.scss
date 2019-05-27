@@ -2,3 +2,17 @@
 	max-width: 940px;
 	margin: 0 auto;
 }
+
+@media (min-width: $desktop-width) {
+	.page-footer {
+		max-width: 980px;
+	}
+
+	.page-footer__social {
+		padding: 0 20px;
+	}
+
+	.page-footer__logo {
+		padding-bottom: 20px;
+	}
+}

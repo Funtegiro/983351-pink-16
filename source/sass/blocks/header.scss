@@ -153,9 +153,11 @@
 @media (min-width: $desktop-width) {
 	.page-header__wrapper {
 		display: flex;
-		flex-wrap: wrap;
+		flex-wrap: nowrap;
 		justify-content: flex-start;
 		margin: 0 auto;
+		max-width: 940px;
+		width: 100%;
 	}
 
 	.page-header {
@@ -169,9 +171,20 @@
 		background-color: rgba(29, 38, 50, 0.3);
 	}
 
+	.page-header__logo {
+		padding-left: 0;
+		padding-right: 0;
+		width: 150px;
+	}
+
 	.site-list__item--active {
 		color: #000000;
 		border-bottom: 2px solid #ffffff;
+	}
+
+	.main-nav {
+		margin-left: auto;
+		flex-grow: 1;
 	}
 
 	.main-nav__toggle {
@@ -181,16 +194,17 @@
 	.main-nav__list {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
+		justify-content: flex-end;
 		align-items: flex-start;
 		flex-wrap: wrap;
-		width: 680px;
+		width: auto;
 		margin: 0 auto;
 		flex-grow: 1;
 	}
 
 	.site-list__item {
 		box-shadow: none;
+		margin-left: 80px;
 	}
 
 	.site-list__link {
@@ -201,8 +215,7 @@
 		text-transform: none;
 		text-decoration: none;
 		cursor: pointer;
-		padding-top: 40px;
-		padding-left: 0;
+		padding: 44px 0 12px;
 	}
 }
 

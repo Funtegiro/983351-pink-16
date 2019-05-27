@@ -35,7 +35,19 @@
 	padding-right: 15px;
 }
 
+@media (min-width: $tablet-width) {
+	.copyright {
+		width: 30%;
+		justify-content: flex-end;
+		padding-top: 39px;
+	}
+}
+
 @media (min-width: $desktop-width) {
+	.copyright {
+		padding-top: 37px;
+	}
+
 	.copyright__text {
 		font-size: 18px;
 	}
