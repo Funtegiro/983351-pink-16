@@ -13,3 +13,9 @@ navToggle.addEventListener("click", function() {
 		navMain.classList.remove("page-header--opened");
 	}
 });
+
+var mapImage = document.querySelector(".contacts__map-image");
+var mapIframe = document.querySelector(".contacts__map-iframe");
+
+mapImage.remove();
+mapIframe.classList.remove("visually-hidden");

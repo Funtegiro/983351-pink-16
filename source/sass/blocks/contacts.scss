@@ -86,7 +86,22 @@
 	width: 100%;
 	height: 190px;
 	border: none;
+}
+
+.contacts__map-iframe {
+	display: block;
+	height: 100%;
+	width: 100%;
 	object-fit: contain;
+	border: none;
+}
+
+.contacts__map-image {
+	display: block;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+	object-position: center;
 }
 
 .contacts__bg {
